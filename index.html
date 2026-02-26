@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NexaFlow AI — More Leads. Faster Deals.</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #060b14;
+  --surface: #0d1626;
+  --surface2: #111e35;
+  --cyan: #00d4ff;
+  --lime: #a3ff47;
+  --blue: #2563eb;
+  --text: #e8f0fe;
+  --muted: #6b7fa3;
+  --border: rgba(0,212,255,0.12);
+  --glow: 0 0 40px rgba(0,212,255,0.15);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'Outfit',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;}
+
+/* SCROLLBAR */
+::-webkit-scrollbar{width:4px;}
+::-webkit-scrollbar-track{background:var(--bg);}
+::-webkit-scrollbar-thumb{background:var(--cyan);border-radius:2px;}
+
+/* ── NAV ── */
+nav{
+  position:fixed;top:0;width:100%;z-index:200;
+  padding:0 48px;height:68px;
+  display:flex;align-items:center;justify-content:space-between;
+  background:rgba(6,11,20,0.85);backdrop-filter:blur(20px);
+  border-bottom:1px solid var(--border);
+}
+.logo{font-family:'Syne',sans-serif;font-size:1.35rem;font-weight:800;letter-spacing:-0.5px;}
+.logo span{color:var(--cyan);}
+.logo sup{font-size:0.55rem;color:var(--lime);vertical-align:super;letter-spacing:0.1em;}
+nav ul{list-style:none;display:flex;gap:36px;align-items:center;}
+nav ul a{text-decoration:none;color:var(--muted);font-size:0.88rem;font-weight:500;transition:color 0.2s;}
+nav ul a:hover{color:var(--cyan);}
+.nav-cta{
+  background:linear-gradient(135deg,var(--cyan),var(--blue));
+  color:#060b14!important;padding:9px 22px;border-radius:6px;
+  font-weight:700!important;font-size:0.85rem!important;transition:transform 0.2s,box-shadow 0.2s!important;
+}
+.nav-cta:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,212,255,0.3)!important;}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px;}
+.hamburger span{display:block;width:24px;height:2px;background:var(--cyan);border-radius:2px;transition:all 0.3s;}
+
+/* ── GRID BG ── */
+.grid-bg{
+  position:fixed;inset:0;z-index:0;pointer-events:none;
+  background-image:
+    linear-gradient(rgba(0,212,255,0.03) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(0,212,255,0.03) 1px,transparent 1px);
+  background-size:60px 60px;
+}
+
+/* ── HERO ── */
+.hero{
+  min-height:100vh;padding:120px 48px 80px;
+  display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;
+  position:relative;z-index:1;
+}
+.hero-orb{
+  position:absolute;top:10%;right:5%;width:500px;height:500px;
+  background:radial-gradient(circle,rgba(0,212,255,0.08) 0%,transparent 70%);
+  border-radius:50%;pointer-events:none;animation:pulse 4s ease-in-out infinite;
+}
+.hero-orb2{
+  position:absolute;bottom:5%;left:10%;width:300px;height:300px;
+  background:radial-gradient(circle,rgba(163,255,71,0.05) 0%,transparent 70%);
+  border-radius:50%;pointer-events:none;animation:pulse 6s ease-in-out infinite reverse;
+}
+@keyframes pulse{0%,100%{transform:scale(1);opacity:1;}50%{transform:scale(1.1);opacity:0.6;}}
+.hero-tag{
+  display:inline-flex;align-items:center;gap:8px;
+  background:rgba(0,212,255,0.08);border:1px solid rgba(0,212,255,0.25);
+  padding:6px 16px;border-radius:100px;font-size:0.78rem;font-weight:600;
+  color:var(--cyan);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:24px;
+}
+.hero-tag::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--lime);animation:blink 1.5s infinite;}
+@keyframes blink{0%,100%{opacity:1;}50%{opacity:0;}}
+h1{font-family:'Syne',sans-serif;font-size:clamp(2.6rem,5vw,4.2rem);font-weight:800;line-height:1.05;margin-bottom:12px;letter-spacing:-1px;}
+h1 .grad{background:linear-gradient(135deg,var(--cyan),var(--lime));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.hero-slogan{font-size:1.3rem;font-weight:600;color:var(--lime);letter-spacing:0.02em;margin-bottom:20px;}
+.hero-sub{font-size:1.05rem;color:var(--muted);line-height:1.75;max-width:500px;margin-bottom:36px;}
+.hero-icons{
+  display:flex;flex-wrap:wrap;gap:12px;margin-bottom:40px;
+}
+.icon-pill{
+  display:flex;align-items:center;gap:8px;
+  background:rgba(255,255,255,0.04);border:1px solid var(--border);
+  padding:8px 16px;border-radius:100px;font-size:0.83rem;font-weight:500;color:var(--text);
+  transition:all 0.2s;
+}
+.icon-pill:hover{border-color:var(--cyan);color:var(--cyan);background:rgba(0,212,255,0.05);}
+.icon-pill .check{color:var(--lime);font-weight:700;}
+.hero-btns{display:flex;gap:16px;flex-wrap:wrap;}
+.btn-glow{
+  background:linear-gradient(135deg,var(--cyan),var(--blue));
+  color:#060b14;padding:14px 30px;border-radius:8px;border:none;
+  font-family:'Outfit',sans-serif;font-size:1rem;font-weight:700;cursor:pointer;
+  transition:all 0.25s;text-decoration:none;display:inline-block;
+  box-shadow:0 0 0 rgba(0,212,255,0);
+}
+.btn-glow:hover{transform:translateY(-3px);box-shadow:0 12px 40px rgba(0,212,255,0.35);}
+.btn-ghost{
+  background:transparent;color:var(--cyan);padding:14px 30px;border-radius:8px;
+  border:1px solid rgba(0,212,255,0.35);
+  font-family:'Outfit',sans-serif;font-size:1rem;font-weight:600;cursor:pointer;
+  transition:all 0.25s;text-decoration:none;display:inline-block;
+}
+.btn-ghost:hover{background:rgba(0,212,255,0.07);border-color:var(--cyan);transform:translateY(-2px);}
+
+/* Hero right — phone mockup */
+.hero-visual{position:relative;display:flex;justify-content:center;align-items:center;}
+.phone-card{
+  background:var(--surface);border:1px solid var(--border);border-radius:24px;
+  padding:28px;width:320px;box-shadow:var(--glow);position:relative;
+  animation:float 3s ease-in-out infinite;
+}
+@keyframes float{0%,100%{transform:translateY(0);}50%{transform:translateY(-12px);}}
+.phone-header{display:flex;align-items:center;gap:10px;margin-bottom:20px;padding-bottom:14px;border-bottom:1px solid var(--border);}
+.wa-icon{width:36px;height:36px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;font-size:1.1rem;}
+.phone-name{font-weight:600;font-size:0.9rem;}
+.phone-status{font-size:0.72rem;color:var(--lime);}
+.msg{padding:10px 14px;border-radius:12px;font-size:0.82rem;margin-bottom:8px;line-height:1.5;max-width:85%;}
+.msg.recv{background:rgba(255,255,255,0.06);border-bottom-left-radius:2px;}
+.msg.sent{background:linear-gradient(135deg,rgba(0,212,255,0.15),rgba(37,99,235,0.2));margin-left:auto;border-bottom-right-radius:2px;}
+.msg-time{font-size:0.65rem;color:var(--muted);text-align:right;margin-top:3px;}
+.typing{display:flex;gap:4px;align-items:center;padding:10px 14px;background:rgba(255,255,255,0.06);border-radius:12px;width:fit-content;margin-top:4px;}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--muted);animation:bounce 1.4s infinite both;}
+.dot:nth-child(2){animation-delay:0.2s;}
+.dot:nth-child(3){animation-delay:0.4s;}
+@keyframes bounce{0%,80%,100%{transform:translateY(0);}40%{transform:translateY(-8px);}}
+.badge-float{
+  position:absolute;top:-16px;right:-16px;
+  background:var(--lime);color:#060b14;
+  font-size:0.72rem;font-weight:800;padding:6px 12px;border-radius:100px;
+  text-transform:uppercase;letter-spacing:0.06em;white-space:nowrap;
+}
+.stat-cards{
+  position:absolute;bottom:-24px;left:-24px;
+  background:var(--surface2);border:1px solid var(--border);
+  border-radius:12px;padding:14px 18px;box-shadow:var(--glow);
+}
+.stat-num{font-family:'Syne',sans-serif;font-size:1.6rem;font-weight:800;color:var(--cyan);}
+.stat-lbl{font-size:0.72rem;color:var(--muted);}
+
+/* ── SECTION SHARED ── */
+section.wrapped{padding:100px 48px;position:relative;z-index:1;}
+.sec-label{font-size:0.72rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--cyan);margin-bottom:12px;}
+h2{font-family:'Syne',sans-serif;font-size:clamp(1.8rem,3vw,2.8rem);font-weight:800;line-height:1.1;letter-spacing:-0.5px;margin-bottom:16px;}
+h2 .grad{background:linear-gradient(135deg,var(--cyan),var(--lime));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.sec-sub{font-size:1rem;color:var(--muted);line-height:1.7;max-width:560px;margin-bottom:60px;}
+
+/* ── HOW IT WORKS ── */
+.how{background:var(--surface);}
+.flow-steps{display:flex;flex-direction:column;gap:0;max-width:720px;margin:0 auto;}
+.flow-step{
+  display:flex;gap:24px;padding:28px 0;
+  border-bottom:1px solid var(--border);position:relative;
+}
+.flow-step:last-child{border-bottom:none;}
+.step-connector{
+  display:flex;flex-direction:column;align-items:center;gap:0;flex-shrink:0;
+}
+.step-circle{
+  width:48px;height:48px;border-radius:50%;
+  background:linear-gradient(135deg,rgba(0,212,255,0.15),rgba(37,99,235,0.15));
+  border:1px solid rgba(0,212,255,0.35);
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Syne',sans-serif;font-weight:800;font-size:1rem;color:var(--cyan);
+  flex-shrink:0;
+}
+.step-line{width:1px;flex:1;background:linear-gradient(to bottom,rgba(0,212,255,0.3),transparent);margin-top:8px;}
+.flow-step:last-child .step-line{display:none;}
+.step-content{padding-top:10px;}
+.step-title{font-weight:700;font-size:1.05rem;margin-bottom:6px;}
+.step-desc{font-size:0.88rem;color:var(--muted);line-height:1.6;}
+.step-arrow{color:var(--lime);font-size:0.8rem;margin-top:6px;font-weight:600;}
+
+/* Flow diagram */
+.flow-diagram{
+  margin-top:60px;
+  background:var(--surface2);border:1px solid var(--border);border-radius:16px;padding:40px;
+  position:relative;overflow:hidden;
+}
+.flow-diagram::before{
+  content:'FLOW';position:absolute;right:-10px;top:50%;transform:translateY(-50%);
+  font-family:'Syne',sans-serif;font-size:8rem;font-weight:800;
+  color:rgba(0,212,255,0.03);pointer-events:none;line-height:1;
+}
+.diagram-title{text-align:center;font-family:'Syne',sans-serif;font-size:1rem;font-weight:700;color:var(--muted);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:36px;}
+.diagram-flow{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:8px;}
+.d-node{
+  background:rgba(0,212,255,0.08);border:1px solid rgba(0,212,255,0.2);
+  border-radius:10px;padding:14px 18px;text-align:center;min-width:120px;
+}
+.d-node .d-icon{font-size:1.4rem;margin-bottom:6px;}
+.d-node .d-label{font-size:0.75rem;font-weight:600;color:var(--text);}
+.d-arrow{color:var(--cyan);font-size:1.3rem;flex-shrink:0;}
+.d-node.highlight{
+  background:linear-gradient(135deg,rgba(0,212,255,0.15),rgba(163,255,71,0.1));
+  border-color:var(--cyan);box-shadow:0 0 20px rgba(0,212,255,0.1);
+}
+
+/* ── SERVICES ── */
+.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;margin-bottom:40px;}
+.svc-card{
+  background:var(--surface);border:1px solid var(--border);border-radius:14px;
+  padding:32px 28px;transition:all 0.3s;position:relative;overflow:hidden;
+}
+.svc-card::before{
+  content:'';position:absolute;inset:0;border-radius:14px;
+  background:linear-gradient(135deg,rgba(0,212,255,0.0),rgba(0,212,255,0.05));
+  opacity:0;transition:opacity 0.3s;
+}
+.svc-card:hover{transform:translateY(-6px);border-color:rgba(0,212,255,0.4);box-shadow:0 20px 60px rgba(0,212,255,0.1);}
+.svc-card:hover::before{opacity:1;}
+.svc-icon{width:52px;height:52px;border-radius:12px;background:rgba(0,212,255,0.08);border:1px solid rgba(0,212,255,0.2);display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin-bottom:20px;}
+.svc-name{font-family:'Syne',sans-serif;font-size:1.1rem;font-weight:700;margin-bottom:10px;}
+.svc-desc{font-size:0.865rem;color:var(--muted);line-height:1.65;}
+.svc-tag{display:inline-block;background:rgba(163,255,71,0.1);border:1px solid rgba(163,255,71,0.25);color:var(--lime);font-size:0.7rem;font-weight:700;padding:3px 10px;border-radius:100px;margin-top:14px;letter-spacing:0.06em;text-transform:uppercase;}
+
+/* ── PRICING ── */
+.pricing-sec{background:var(--surface);}
+.pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:48px;}
+.plan-card{
+  background:var(--bg);border:1px solid var(--border);border-radius:16px;
+  padding:36px 28px;transition:all 0.3s;position:relative;overflow:hidden;
+}
+.plan-card.featured{
+  background:linear-gradient(160deg,rgba(0,212,255,0.07),rgba(37,99,235,0.07));
+  border-color:rgba(0,212,255,0.4);
+  box-shadow:0 0 60px rgba(0,212,255,0.1);
+}
+.plan-card:hover{transform:translateY(-6px);border-color:rgba(0,212,255,0.35);}
+.plan-badge{
+  position:absolute;top:0;left:50%;transform:translateX(-50%);
+  background:linear-gradient(135deg,var(--cyan),var(--blue));
+  color:#060b14;font-size:0.7rem;font-weight:800;padding:4px 18px;
+  border-radius:0 0 10px 10px;text-transform:uppercase;letter-spacing:0.08em;white-space:nowrap;
+}
+.plan-stars{font-size:1.2rem;margin-bottom:12px;}
+.plan-name{font-family:'Syne',sans-serif;font-size:1.2rem;font-weight:800;margin-bottom:8px;}
+.plan-price{font-family:'Syne',sans-serif;font-size:2.4rem;font-weight:800;color:var(--cyan);line-height:1;margin-bottom:4px;}
+.plan-price small{font-size:0.9rem;color:var(--muted);font-family:'Outfit',sans-serif;font-weight:400;}
+.plan-cycle{font-size:0.78rem;color:var(--muted);margin-bottom:24px;}
+.plan-features{list-style:none;display:flex;flex-direction:column;gap:10px;margin-bottom:28px;}
+.plan-features li{font-size:0.875rem;color:var(--text);padding-left:20px;position:relative;line-height:1.5;}
+.plan-features li::before{content:'✓';position:absolute;left:0;color:var(--lime);font-weight:700;font-size:0.8rem;}
+.plan-features li.dim{color:var(--muted);}
+.plan-btn{
+  width:100%;padding:12px;border-radius:8px;border:1px solid rgba(0,212,255,0.35);
+  background:transparent;color:var(--cyan);font-family:'Outfit',sans-serif;
+  font-size:0.9rem;font-weight:600;cursor:pointer;transition:all 0.2s;
+}
+.plan-btn:hover,.plan-card.featured .plan-btn{background:linear-gradient(135deg,var(--cyan),var(--blue));color:#060b14;border-color:transparent;font-weight:700;}
+
+/* ── WHY US ── */
+.comparison{
+  display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:60px;
+}
+.compare-col{
+  background:var(--surface);border-radius:14px;padding:32px;border:1px solid var(--border);
+}
+.compare-col.bad{border-color:rgba(255,60,60,0.2);}
+.compare-col.good{border-color:rgba(163,255,71,0.3);background:rgba(163,255,71,0.03);}
+.compare-head{
+  display:flex;align-items:center;gap:10px;
+  font-family:'Syne',sans-serif;font-size:1.1rem;font-weight:700;margin-bottom:24px;
+}
+.compare-dot{width:10px;height:10px;border-radius:50%;}
+.compare-dot.red{background:#ff3c3c;}
+.compare-dot.green{background:var(--lime);}
+.compare-item{
+  display:flex;align-items:flex-start;gap:12px;
+  padding:12px 0;border-bottom:1px solid var(--border);font-size:0.875rem;
+}
+.compare-item:last-child{border-bottom:none;}
+.ci-icon{font-size:1rem;flex-shrink:0;margin-top:1px;}
+.ci-text{line-height:1.5;}
+.ci-text strong{display:block;font-weight:600;margin-bottom:2px;}
+.ci-text span{color:var(--muted);font-size:0.82rem;}
+
+.why-perks{display:flex;flex-wrap:wrap;gap:12px;margin-top:48px;}
+.perk{
+  display:flex;align-items:center;gap:8px;
+  background:rgba(163,255,71,0.07);border:1px solid rgba(163,255,71,0.2);
+  padding:10px 18px;border-radius:100px;font-size:0.875rem;font-weight:600;
+  color:var(--text);
+}
+.perk::before{content:'✔';color:var(--lime);}
+
+/* ── FREE AUDIT ── */
+.audit-sec{
+  background:linear-gradient(135deg,rgba(0,212,255,0.05),rgba(37,99,235,0.05));
+  border-top:1px solid var(--border);border-bottom:1px solid var(--border);
+}
+.audit-inner{
+  display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;
+}
+.audit-checklist{display:flex;flex-direction:column;gap:16px;margin-bottom:36px;}
+.audit-item{
+  display:flex;align-items:center;gap:16px;
+  background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:16px 20px;
+  transition:all 0.2s;
+}
+.audit-item:hover{border-color:var(--cyan);transform:translateX(6px);}
+.audit-item-icon{font-size:1.3rem;}
+.audit-item-text{font-weight:500;font-size:0.9rem;}
+.audit-item-sub{font-size:0.78rem;color:var(--muted);margin-top:2px;}
+
+/* ── LEAD FORM ── */
+.lead-form-wrap{
+  background:var(--surface);border:1px solid var(--border);border-radius:16px;
+  padding:36px;box-shadow:var(--glow);
+}
+.lead-form-wrap h3{font-family:'Syne',sans-serif;font-size:1.5rem;font-weight:800;margin-bottom:6px;}
+.lead-form-wrap p{font-size:0.875rem;color:var(--muted);margin-bottom:28px;line-height:1.6;}
+.form-group{margin-bottom:16px;}
+label{display:block;font-size:0.78rem;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:6px;}
+input,select,textarea{
+  width:100%;background:var(--bg);border:1px solid rgba(255,255,255,0.1);
+  border-radius:8px;padding:12px 16px;color:var(--text);
+  font-family:'Outfit',sans-serif;font-size:0.9rem;outline:none;
+  transition:border-color 0.2s,box-shadow 0.2s;
+}
+input::placeholder,textarea::placeholder{color:rgba(255,255,255,0.2);}
+input:focus,select:focus,textarea:focus{border-color:var(--cyan);box-shadow:0 0 0 3px rgba(0,212,255,0.1);}
+select option{background:var(--bg);}
+textarea{resize:vertical;min-height:90px;}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.submit-btn{
+  width:100%;background:linear-gradient(135deg,var(--cyan),var(--blue));
+  color:#060b14;border:none;border-radius:8px;padding:14px;
+  font-family:'Outfit',sans-serif;font-size:1rem;font-weight:700;cursor:pointer;
+  margin-top:6px;transition:all 0.25s;
+}
+.submit-btn:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(0,212,255,0.3);}
+.form-note{text-align:center;font-size:0.75rem;color:var(--muted);margin-top:12px;}
+.form-success{
+  display:none;text-align:center;padding:20px;
+  background:rgba(163,255,71,0.08);border:1px solid rgba(163,255,71,0.3);
+  border-radius:8px;color:var(--lime);font-weight:600;
+}
+
+/* ── INDUSTRIES ── */
+.industries-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px;}
+.ind-tag{
+  background:rgba(255,255,255,0.04);border:1px solid var(--border);
+  padding:8px 16px;border-radius:100px;font-size:0.83rem;font-weight:500;
+  transition:all 0.2s;cursor:default;
+}
+.ind-tag:hover{border-color:var(--cyan);color:var(--cyan);}
+
+/* ── FOOTER ── */
+footer{
+  background:var(--surface);border-top:1px solid var(--border);
+  padding:60px 48px 32px;
+}
+.footer-top{display:grid;grid-template-columns:2fr 1fr 1fr;gap:60px;margin-bottom:48px;}
+.footer-brand p{font-size:0.875rem;color:var(--muted);line-height:1.7;max-width:280px;margin-top:12px;}
+.footer-slogan{font-size:0.9rem;font-weight:600;color:var(--lime);margin-top:8px;}
+.footer-col h5{font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:var(--cyan);margin-bottom:16px;}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:10px;}
+.footer-col ul li a{text-decoration:none;color:var(--muted);font-size:0.875rem;transition:color 0.2s;}
+.footer-col ul li a:hover{color:var(--cyan);}
+.footer-bottom{border-top:1px solid var(--border);padding-top:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;}
+.footer-bottom p{font-size:0.8rem;color:var(--muted);}
+.footer-wa{
+  display:flex;align-items:center;gap:8px;
+  background:rgba(37,211,102,0.1);border:1px solid rgba(37,211,102,0.25);
+  color:#25d366;padding:8px 18px;border-radius:100px;
+  font-size:0.83rem;font-weight:600;text-decoration:none;transition:all 0.2s;
+}
+.footer-wa:hover{background:rgba(37,211,102,0.2);transform:translateY(-2px);}
+
+/* ── WA FLOAT ── */
+.wa-float{
+  position:fixed;bottom:28px;right:28px;z-index:300;
+  width:58px;height:58px;border-radius:50%;
+  background:#25d366;display:flex;align-items:center;justify-content:center;
+  font-size:1.6rem;text-decoration:none;
+  box-shadow:0 8px 32px rgba(37,211,102,0.4);
+  animation:float 3s ease-in-out infinite;transition:transform 0.2s;
+}
+.wa-float:hover{transform:scale(1.1);}
+.wa-tooltip{
+  position:absolute;right:70px;top:50%;transform:translateY(-50%);
+  background:var(--surface2);border:1px solid var(--border);
+  border-radius:8px;padding:8px 14px;white-space:nowrap;
+  font-size:0.78rem;font-weight:600;color:var(--text);pointer-events:none;
+  opacity:0;transition:opacity 0.2s;
+}
+.wa-float:hover .wa-tooltip{opacity:1;}
+
+/* ── ANIMATIONS ── */
+.fade-up{opacity:0;transform:translateY(40px);transition:opacity 0.7s,transform 0.7s;}
+.fade-up.visible{opacity:1;transform:translateY(0);}
+.delay-1{transition-delay:0.1s;} .delay-2{transition-delay:0.2s;} .delay-3{transition-delay:0.3s;}
+
+/* ── MODAL ── */
+.modal-overlay{
+  position:fixed;inset:0;background:rgba(6,11,20,0.9);backdrop-filter:blur(12px);
+  z-index:500;display:flex;align-items:center;justify-content:center;
+  opacity:0;pointer-events:none;transition:opacity 0.3s;
+}
+.modal-overlay.open{opacity:1;pointer-events:all;}
+.modal-box{
+  background:var(--surface);border:1px solid var(--border);border-radius:16px;
+  padding:40px;width:90%;max-width:480px;position:relative;
+  transform:scale(0.95);transition:transform 0.3s;max-height:90vh;overflow-y:auto;
+}
+.modal-overlay.open .modal-box{transform:scale(1);}
+.modal-close{position:absolute;top:16px;right:16px;background:rgba(255,255,255,0.06);border:1px solid var(--border);border-radius:6px;width:32px;height:32px;display:flex;align-items:center;justify-content:center;cursor:pointer;color:var(--muted);font-size:1rem;transition:all 0.2s;}
+.modal-close:hover{color:var(--cyan);border-color:var(--cyan);}
+
+/* ── RESPONSIVE ── */
+@media(max-width:960px){
+  .hero{grid-template-columns:1fr;padding:100px 24px 60px;}
+  .hero-visual{display:none;}
+  .pricing-grid{grid-template-columns:1fr;}
+  .comparison{grid-template-columns:1fr;}
+  .audit-inner{grid-template-columns:1fr;gap:40px;}
+  .footer-top{grid-template-columns:1fr;gap:32px;}
+  .footer-bottom{flex-direction:column;text-align:center;}
+  section.wrapped{padding:60px 24px;}
+  nav{padding:0 20px;}
+  nav ul{display:none;}
+  .hamburger{display:flex;}
+  .mobile-menu{
+    display:none;position:fixed;top:68px;left:0;right:0;
+    background:rgba(6,11,20,0.97);backdrop-filter:blur(20px);
+    padding:20px;border-bottom:1px solid var(--border);z-index:199;
+    flex-direction:column;gap:4px;
+  }
+  .mobile-menu.open{display:flex;}
+  .mobile-menu a{text-decoration:none;color:var(--text);font-size:1rem;font-weight:500;padding:12px 16px;border-radius:8px;display:block;transition:all 0.2s;}
+  .mobile-menu a:hover{background:rgba(0,212,255,0.08);color:var(--cyan);}
+  .plan-badge{font-size:0.65rem;}
+}
+@media(max-width:600px){
+  h1{font-size:2.2rem;}
+  .form-row{grid-template-columns:1fr;}
+  .hero-icons{gap:8px;}
+  .icon-pill{font-size:0.78rem;}
+  .diagram-flow{gap:4px;}
+  .d-node{min-width:90px;padding:10px 12px;}
+}
+</style>
+</head>
+<body>
+<div class="grid-bg"></div>
+
+<!-- NAV -->
+<nav>
+  <div class="logo">Nexa<span>Flow</span> <sup>AI</sup></div>
+  <ul>
+    <li><a href="#how">How It Works</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#audit">Free Audit</a></li>
+    <li><a href="#audit" class="nav-cta">Get Free Audit</a></li>
+  </ul>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#how" onclick="toggleMenu()">How It Works</a>
+  <a href="#services" onclick="toggleMenu()">Services</a>
+  <a href="#pricing" onclick="toggleMenu()">Pricing</a>
+  <a href="#audit" onclick="toggleMenu()">Free Audit</a>
+  <a href="#audit" onclick="toggleMenu()" style="background:linear-gradient(135deg,var(--cyan),var(--blue));color:#060b14;font-weight:700;text-align:center;margin-top:8px;">Get Free Audit</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-orb"></div>
+  <div class="hero-orb2"></div>
+  <div class="hero-left">
+    <div class="hero-tag">AI Automation for Small Businesses</div>
+    <h1>AI <span class="grad">Automation</span><br>for Growing<br>Businesses</h1>
+    <div class="hero-slogan">More Leads. Faster Deals.</div>
+    <p class="hero-sub">WhatsApp auto-replies, lead capture, AI follow-ups, and smart catalogues — all on autopilot. Built for gyms, coaching, real estate, and more.</p>
+    <div class="hero-icons">
+      <div class="icon-pill"><span class="check">✔</span> Instant Auto-Reply</div>
+      <div class="icon-pill"><span class="check">✔</span> Lead Capture</div>
+      <div class="icon-pill"><span class="check">✔</span> AI Follow-Up</div>
+      <div class="icon-pill"><span class="check">✔</span> Property Catalogue</div>
+    </div>
+    <div class="hero-btns">
+      <a href="#audit" class="btn-glow">📋 Book Free Setup</a>
+      <a href="#pricing" class="btn-ghost">View Plans →</a>
+    </div>
+    <div class="industries-row" style="margin-top:32px;">
+      <span class="ind-tag">🏋️ Gyms</span>
+      <span class="ind-tag">📚 Coaching</span>
+      <span class="ind-tag">🏠 Real Estate</span>
+      <span class="ind-tag">🍽️ Restaurants</span>
+      <span class="ind-tag">💇 Salons</span>
+      <span class="ind-tag">🏥 Clinics</span>
+      <span class="ind-tag">+ More</span>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="phone-card">
+      <div class="badge-float">⚡ AI Active</div>
+      <div class="phone-header">
+        <div class="wa-icon">💬</div>
+        <div>
+          <div class="phone-name">NexaFlow Bot</div>
+          <div class="phone-status">● Online — Responding instantly</div>
+        </div>
+      </div>
+      <div class="msg recv">Hi, I'm interested in your 2BHK flat listing. Can you share details?
+        <div class="msg-time">10:42 AM</div>
+      </div>
+      <div class="msg sent">🏠 Thanks for reaching out! Here are details for the 2BHK in Gomti Nagar:<br><br>📐 950 sq ft | ₹45L | Semi-furnished<br>🔑 Ready to move<br><br>Shall I send the full catalogue?
+        <div class="msg-time">10:42 AM ✓✓</div>
+      </div>
+      <div class="msg recv">Yes please!
+        <div class="msg-time">10:43 AM</div>
+      </div>
+      <div class="typing">
+        <div class="dot"></div><div class="dot"></div><div class="dot"></div>
+      </div>
+      <div class="stat-cards">
+        <div class="stat-num">3.2s</div>
+        <div class="stat-lbl">Avg response time</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="wrapped how" id="how">
+  <div class="sec-label fade-up">Process</div>
+  <h2 class="fade-up">A Simple System That Brings<br>You <span class="grad">More Buyer Inquiries</span></h2>
+  <p class="sec-sub fade-up">From the moment a client messages you — to a qualified, ready-to-close lead — everything runs automatically.</p>
+
+  <div class="flow-steps">
+    <div class="flow-step fade-up">
+      <div class="step-connector">
+        <div class="step-circle">1</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-content">
+        <div class="step-title">Client sends an enquiry</div>
+        <div class="step-desc">A potential buyer or customer messages you on WhatsApp — about a flat, a gym membership, a course, anything.</div>
+        <div class="step-arrow">→ WhatsApp auto-reply triggers instantly</div>
+      </div>
+    </div>
+    <div class="flow-step fade-up delay-1">
+      <div class="step-connector">
+        <div class="step-circle">2</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-content">
+        <div class="step-title">Property / service details sent instantly</div>
+        <div class="step-desc">The AI bot responds in seconds with relevant details, images, pricing, and catalogue — no human needed.</div>
+        <div class="step-arrow">→ Lead gets what they want immediately</div>
+      </div>
+    </div>
+    <div class="flow-step fade-up delay-2">
+      <div class="step-connector">
+        <div class="step-circle">3</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-content">
+        <div class="step-title">Lead form captures buyer information</div>
+        <div class="step-desc">A smart link collects name, phone, and interest automatically. No manual entry. No lead lost.</div>
+        <div class="step-arrow">→ Data flows into your lead tracker sheet</div>
+      </div>
+    </div>
+    <div class="flow-step fade-up delay-1">
+      <div class="step-connector">
+        <div class="step-circle">4</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-content">
+        <div class="step-title">AI sends automated follow-up messages</div>
+        <div class="step-desc">A 7–14 day follow-up sequence runs automatically. Cold leads get warmed. You never chase manually again.</div>
+        <div class="step-arrow">→ Consistent, professional follow-up on autopilot</div>
+      </div>
+    </div>
+    <div class="flow-step fade-up delay-2">
+      <div class="step-connector">
+        <div class="step-circle">5</div>
+      </div>
+      <div class="step-content">
+        <div class="step-title">You get ready-to-close leads</div>
+        <div class="step-desc">By the time you speak to the lead, they're warm, informed, and interested. Your closing rate goes up.</div>
+        <div class="step-arrow">🎯 Agent gets high-intent, qualified leads</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Flow Diagram -->
+  <div class="flow-diagram fade-up">
+    <div class="diagram-title">Automated Lead Flow Diagram</div>
+    <div class="diagram-flow">
+      <div class="d-node">
+        <div class="d-icon">💬</div>
+        <div class="d-label">Client<br>Enquiry</div>
+      </div>
+      <div class="d-arrow">→</div>
+      <div class="d-node highlight">
+        <div class="d-icon">🤖</div>
+        <div class="d-label">WA Auto<br>Reply</div>
+      </div>
+      <div class="d-arrow">→</div>
+      <div class="d-node">
+        <div class="d-icon">📋</div>
+        <div class="d-label">Lead<br>Captured</div>
+      </div>
+      <div class="d-arrow">→</div>
+      <div class="d-node highlight">
+        <div class="d-icon">📲</div>
+        <div class="d-label">AI Follow<br>Up</div>
+      </div>
+      <div class="d-arrow">→</div>
+      <div class="d-node">
+        <div class="d-icon">🤝</div>
+        <div class="d-label">Deal<br>Closed</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="wrapped" id="services" style="background:var(--bg);">
+  <div class="sec-label fade-up">Services</div>
+  <h2 class="fade-up">What We <span class="grad">Offer</span></h2>
+  <p class="sec-sub fade-up">Everything you need to automate your business growth — from the first message to the final deal.</p>
+
+  <div class="services-grid">
+    <div class="svc-card fade-up">
+      <div class="svc-icon">💬</div>
+      <div class="svc-name">WhatsApp Automation</div>
+      <div class="svc-desc">Auto-replies, property/service menus, instant responses, and smart message flows. Never miss a lead because you were busy.</div>
+      <div class="svc-tag">Core Feature</div>
+    </div>
+    <div class="svc-card fade-up delay-1">
+      <div class="svc-icon">📊</div>
+      <div class="svc-name">Lead Dashboard Setup</div>
+      <div class="svc-desc">Track every enquiry, buyer detail, and lead status with a clean, easy-to-read Google Sheet dashboard. Know your pipeline at a glance.</div>
+      <div class="svc-tag">Included</div>
+    </div>
+    <div class="svc-card fade-up delay-2">
+      <div class="svc-icon">🗂️</div>
+      <div class="svc-name">Catalogue Design</div>
+      <div class="svc-desc">Clean, professional property or service catalogues designed to impress buyers and share instantly on WhatsApp or Instagram.</div>
+      <div class="svc-tag">Design Ready</div>
+    </div>
+    <div class="svc-card fade-up">
+      <div class="svc-icon">🔁</div>
+      <div class="svc-name">AI Follow-Up System</div>
+      <div class="svc-desc">Automated 7–14 day follow-up sequences that re-engage cold leads with perfectly timed, personalized messages. More conversions, zero effort.</div>
+      <div class="svc-tag">AI Powered</div>
+    </div>
+    <div class="svc-card fade-up delay-1">
+      <div class="svc-icon">📱</div>
+      <div class="svc-name">Social Media (Optional)</div>
+      <div class="svc-desc">8–12 posts/month crafted using Canva for Instagram and Facebook. Keep your audience engaged and your brand visible consistently.</div>
+      <div class="svc-tag">Optional Add-On</div>
+    </div>
+    <div class="svc-card fade-up delay-2">
+      <div class="svc-icon">📈</div>
+      <div class="svc-name">Google Business Audit</div>
+      <div class="svc-desc">A full audit of your online presence — Google Business, WhatsApp response, catalogue, social media, and lead flow. 100% free for the first report.</div>
+      <div class="svc-tag">1st Report FREE</div>
+    </div>
+  </div>
+  <div style="text-align:center;margin-top:8px;">
+    <a href="#audit" class="btn-glow">📂 See Sample Catalogue</a>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="wrapped pricing-sec" id="pricing">
+  <div class="sec-label fade-up">Pricing</div>
+  <h2 class="fade-up">Simple, <span class="grad">Transparent Pricing</span></h2>
+  <p class="sec-sub fade-up">Start with what you need. Scale when you're ready. No contracts, no surprises.</p>
+
+  <div class="pricing-grid">
+    <div class="plan-card fade-up">
+      <div class="plan-stars">⭐</div>
+      <div class="plan-name">Starter</div>
+      <div class="plan-price">₹599 <small></small></div>
+      <div class="plan-cycle">One-time setup</div>
+      <ul class="plan-features">
+        <li>WhatsApp auto-reply setup</li>
+        <li>1 professional catalogue</li>
+        <li>Lead capture form</li>
+        <li>Follow-up message script</li>
+        <li>Google Business tips checklist</li>
+        <li class="dim">Monthly updates</li>
+        <li class="dim">Lead tracker dashboard</li>
+        <li class="dim">Social media posts</li>
+      </ul>
+      <button class="plan-btn" onclick="openBooking('Starter – ₹999')">Start Now →</button>
+    </div>
+    <div class="plan-card featured fade-up delay-1">
+      <div class="plan-badge">⭐ Most Popular</div>
+      <div class="plan-stars" style="margin-top:20px;">⭐⭐</div>
+      <div class="plan-name">Growth</div>
+      <div class="plan-price">₹1,999 <small>/mo</small></div>
+      <div class="plan-cycle">Monthly subscription</div>
+      <ul class="plan-features">
+        <li>Everything in Starter</li>
+        <li>4 catalogues/month</li>
+        <li>Monthly content updates</li>
+        <li>Full lead tracker dashboard</li>
+        <li>AI follow-up automation (7–14 day)</li>
+        <li>WhatsApp flow improvements</li>
+        <li>Monthly performance report</li>
+        <li class="dim">Social media posts</li>
+      </ul>
+      <button class="plan-btn" onclick="openBooking('Growth – ₹1,999/month')">Start Now →</button>
+    </div>
+    <div class="plan-card fade-up delay-2">
+      <div class="plan-stars">⭐⭐⭐</div>
+      <div class="plan-name">Premium</div>
+      <div class="plan-price">₹5,999 <small>/mo</small></div>
+      <div class="plan-cycle">Monthly subscription</div>
+      <ul class="plan-features">
+        <li>Everything in Growth</li>
+        <li>Social media 8–12 posts/month</li>
+        <li>Custom ad strategy plan</li>
+        <li>Priority WhatsApp support</li>
+        <li>Advanced lead segmentation</li>
+        <li>Bi-weekly strategy calls</li>
+        <li>Google Business optimization</li>
+        <li>Competitor analysis report</li>
+      </ul>
+      <button class="plan-btn" onclick="openBooking('Premium – ₹5,999/month')">Start Now →</button>
+    </div>
+  </div>
+
+  <div style="text-align:center;margin-top:12px;padding:20px;background:rgba(163,255,71,0.05);border:1px solid rgba(163,255,71,0.15);border-radius:12px;" class="fade-up">
+    <div style="font-size:0.9rem;color:var(--muted);">Not sure which plan? <span style="color:var(--lime);font-weight:600;">Start with our FREE online presence audit</span> — and we'll recommend the right fit for your business.</div>
+    <a href="#audit" class="btn-ghost" style="display:inline-block;margin-top:16px;">Get Free Audit First</a>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="wrapped" id="why" style="background:var(--bg);">
+  <div class="sec-label fade-up">Why NexaFlow</div>
+  <h2 class="fade-up">Because Traditional<br>Marketing is <span class="grad">Slow. AI is Instant.</span></h2>
+  <p class="sec-sub fade-up">Every minute you delay responding, a competitor closes the deal. NexaFlow makes sure that never happens.</p>
+
+  <div class="comparison fade-up">
+    <div class="compare-col bad">
+      <div class="compare-head">
+        <div class="compare-dot red"></div> The Old Way
+      </div>
+      <div class="compare-item">
+        <div class="ci-icon">⏳</div>
+        <div class="ci-text"><strong>Slow responses</strong><span>Manually replying hours later — by then the lead has moved on</span></div>
+      </div>
+      <div class="compare-item">
+        <div class="ci-icon">📉</div>
+        <div class="ci-text"><strong>Lost leads everywhere</strong><span>No system to track who enquired, when, or what they needed</span></div>
+      </div>
+      <div class="compare-item">
+        <div class="ci-icon">😩</div>
+        <div class="ci-text"><strong>Manual follow-up</strong><span>Remembering to follow up is exhausting. Most leads just go cold</span></div>
+      </div>
+      <div class="compare-item">
+        <div class="ci-icon">📵</div>
+        <div class="ci-text"><strong>No online presence</strong><span>Google Business incomplete. No catalogue. No social activity</span></div>
+      </div>
+      <div class="compare-item">
+        <div class="ci-icon">💸</div>
+        <div class="ci-text"><strong>Expensive agencies</strong><span>₹20K+ per month for results you can't measure</span></div>
+      </div>
+    </div>
+    <div class="compare-col good">
+      <div class="compare-head">
+        <div class="compare-dot green"></div> The NexaFlow Way
+      </div>
+      <div class="compare-item">
+        <div class="ci-icon">⚡</div>
+        <div class="ci-text"><strong>Instant responses</strong><span>Auto-reply in under 5 seconds. Lead gets what they want immediately</span></div>
+      </div>
+      <div class="compare-item">
+        <div class="ci-icon">📋</div>
+        <div class="ci-text"><strong>Zero lost leads</strong><span>Every enquiry captured, logged, and tracked automatically</span></div>
+      </div>
+      <div class="compare-item">
+        <div class="ci-icon">🤖</div>
+        <div class="ci-text"><strong>Automated follow-up</strong><span>AI sends perfect follow-up messages on a 7–14 day schedule</span></div>
+      </div>
+      <div class="compare-item">
+        <div class="ci-icon">🌐</div>
+        <div class="ci-text"><strong>Strong online presence</strong><span>Optimized Google Business, catalogues, and consistent social content</span></div>
+      </div>
+      <div class="compare-item">
+        <div class="ci-icon">✅</div>
+        <div class="ci-text"><strong>Transparent, affordable</strong><span>Starting at ₹999 with clear pricing and measurable results</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="why-perks fade-up" style="margin-top:40px;">
+    <div class="perk">Faster responses</div>
+    <div class="perk">No lost leads</div>
+    <div class="perk">Automated follow-up</div>
+    <div class="perk">More site visits</div>
+    <div class="perk">More deals closed</div>
+    <div class="perk">Better Google ranking</div>
+    <div class="perk">24/7 availability</div>
+  </div>
+</section>
+
+<!-- FREE AUDIT -->
+<section class="wrapped audit-sec" id="audit">
+  <div class="audit-inner">
+    <div>
+      <div class="sec-label fade-up">Free Offer</div>
+      <h2 class="fade-up">Get Your Free<br><span class="grad">Online Presence Audit</span></h2>
+      <p style="font-size:1rem;color:var(--muted);line-height:1.7;margin-bottom:36px;" class="fade-up">
+        We'll analyse your entire digital footprint and tell you exactly what's costing you leads — for free. No commitment needed.
+      </p>
+
+      <div class="audit-checklist fade-up">
+        <div class="audit-item">
+          <div class="audit-item-icon">🗺️</div>
+          <div>
+            <div class="audit-item-text">Google Business Profile</div>
+            <div class="audit-item-sub">Completeness, reviews, visibility on Maps</div>
+          </div>
+        </div>
+        <div class="audit-item">
+          <div class="audit-item-icon">💬</div>
+          <div>
+            <div class="audit-item-text">WhatsApp Response Speed</div>
+            <div class="audit-item-sub">How fast are you responding to enquiries?</div>
+          </div>
+        </div>
+        <div class="audit-item">
+          <div class="audit-item-icon">📂</div>
+          <div>
+            <div class="audit-item-text">Property / Service Catalogue</div>
+            <div class="audit-item-sub">Professional presentation and shareability</div>
+          </div>
+        </div>
+        <div class="audit-item">
+          <div class="audit-item-icon">📸</div>
+          <div>
+            <div class="audit-item-text">Social Media Presence</div>
+            <div class="audit-item-sub">Content frequency, engagement, branding</div>
+          </div>
+        </div>
+        <div class="audit-item">
+          <div class="audit-item-icon">🔄</div>
+          <div>
+            <div class="audit-item-text">Lead Flow System</div>
+            <div class="audit-item-sub">How leads are captured and followed up</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="display:flex;gap:12px;flex-wrap:wrap;" class="fade-up">
+        <a href="https://wa.me/919369699864?text=Hi%20NexaFlow!%20I%20want%20my%20Free%20Online%20Presence%20Audit%20for%20my%20business." target="_blank" class="btn-glow">💬 Get Free Audit on WhatsApp</a>
+      </div>
+      <p style="font-size:0.78rem;color:var(--muted);margin-top:12px;">↑ Replace the number in the link with your WhatsApp number</p>
+    </div>
+
+    <!-- LEAD CAPTURE FORM -->
+    <div class="lead-form-wrap fade-up">
+      <h3>Tell Us About<br>Your Business</h3>
+      <p>Fill this form and we'll reach out within 24 hours with your free audit + a custom plan recommendation.</p>
+      
+      <div id="lead-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Your Name *</label>
+            <input type="text" id="f-name" placeholder="Ravi Sharma" required>
+          </div>
+          <div class="form-group">
+            <label>Phone Number *</label>
+            <input type="tel" id="f-phone" placeholder="+91 98765 43210" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Business Email</label>
+          <input type="email" id="f-email" placeholder="you@business.com">
+        </div>
+        <div class="form-group">
+          <label>Business Name *</label>
+          <input type="text" id="f-biz" placeholder="e.g. FitLife Gym, PropEdge Realty" required>
+        </div>
+        <div class="form-group">
+          <label>Business Type *</label>
+          <select id="f-type">
+            <option value="">Select your industry</option>
+            <option>Real Estate / Property</option>
+            <option>Gym / Fitness Centre</option>
+            <option>Coaching / EdTech</option>
+            <option>Restaurant / Café</option>
+            <option>Salon / Beauty</option>
+            <option>Clinic / Healthcare</option>
+            <option>Retail / Shop</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>City / Location</label>
+          <input type="text" id="f-city" placeholder="Lucknow, Delhi, Mumbai...">
+        </div>
+        <div class="form-group">
+          <label>What's Your Biggest Challenge?</label>
+          <textarea id="f-msg" placeholder="e.g. I get enquiries but no one converts... / I don't know how to follow up... / I want more leads from WhatsApp..."></textarea>
+        </div>
+        <div class="form-group">
+          <label>Interested In</label>
+          <select id="f-plan">
+            <option value="">Select a plan or service</option>
+            <option>Free Audit Only</option>
+            <option>Starter – ₹699 (One-time)</option>
+            <option>Growth – ₹1,999/month</option>
+            <option>Premium – ₹5,999/month</option>
+            <option>Not sure yet — need advice</option>
+          </select>
+        </div>
+        <button class="submit-btn" onclick="submitLead()">📩 Submit & Get Free Audit</button>
+        <p class="form-note">🔒 Your details are private and never shared. We'll contact you on WhatsApp within 24 hours.</p>
+      </div>
+      <div class="form-success" id="form-success">
+        ✅ Request received! We'll reach out to you on WhatsApp within 24 hours with your free audit report.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="logo">Nexa<span>Flow</span> <sup>AI</sup></div>
+      <p>AI automation for gyms, coaching, real estate, and growing small businesses. More leads. Faster deals.</p>
+      <div class="footer-slogan">More Leads. Faster Deals.</div>
+    </div>
+    <div class="footer-col">
+      <h5>Services</h5>
+      <ul>
+        <li><a href="#services">WhatsApp Automation</a></li>
+        <li><a href="#services">Lead Dashboard</a></li>
+        <li><a href="#services">Catalogue Design</a></li>
+        <li><a href="#services">AI Follow-Up</a></li>
+        <li><a href="#services">Social Media</a></li>
+        <li><a href="#services">Google Audit</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Company</h5>
+      <ul>
+        <li><a href="#how">How It Works</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#why">Why NexaFlow</a></li>
+        <li><a href="#audit">Free Audit</a></li>
+        <li><a href="https://wa.me/919369699864" target="_blank">WhatsApp Us</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 NexaFlow AI Automations. Made for Growing Businesses 🚀</p>
+    <a href="https://wa.me/919369699864?text=Hi%20NexaFlow!%20I%20want%20to%20know%20more%20about%20your%20AI%20automation%20services." target="_blank" class="footer-wa">💬 Chat on WhatsApp</a>
+  </div>
+</footer>
+
+<!-- WA FLOATING BUTTON -->
+<a href="https://wa.me/919369699864?text=Hi%20NexaFlow!%20I%27m%20interested%20in%20AI%20automation%20for%20my%20business." 
+   target="_blank" class="wa-float" title="Chat on WhatsApp">
+  💬
+  <div class="wa-tooltip">Chat with us on WhatsApp</div>
+</a>
+
+<!-- BOOKING MODAL -->
+<div class="modal-overlay" id="booking-modal">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeBooking()">✕</button>
+    <div class="sec-label" style="margin-bottom:8px;">Quick Booking</div>
+    <h3 style="font-family:'Syne',sans-serif;font-size:1.6rem;font-weight:800;margin-bottom:6px;">Book Your Plan</h3>
+    <p id="modal-plan-name" style="color:var(--cyan);font-weight:700;font-size:1rem;margin-bottom:20px;"></p>
+    <p style="font-size:0.875rem;color:var(--muted);margin-bottom:24px;">Leave your details and we'll set everything up for you — usually within 24–48 hours.</p>
+    <div class="form-row">
+      <div class="form-group">
+        <label>Name</label>
+        <input type="text" id="m-name" placeholder="Your name">
+      </div>
+      <div class="form-group">
+        <label>Phone *</label>
+        <input type="tel" id="m-phone" placeholder="+91 ...">
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Business Name</label>
+      <input type="text" id="m-biz" placeholder="Your business name">
+    </div>
+    <div class="form-group">
+      <label>Message (optional)</label>
+      <textarea id="m-msg" placeholder="Any specific requirements or questions?" style="min-height:70px;"></textarea>
+    </div>
+    <button class="submit-btn" onclick="submitBooking()">📩 Confirm Booking</button>
+    <p class="form-note">Or <a href="https://wa.me/919369699864" target="_blank" style="color:var(--cyan);">message us directly on WhatsApp</a></p>
+  </div>
+</div>
+
+<script>
+// ── SCROLL ANIMATIONS ──
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.1 });
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+// ── MOBILE MENU ──
+function toggleMenu() {
+  const m = document.getElementById('mobile-menu');
+  m.classList.toggle('open');
+}
+
+// ── MODAL ──
+let selectedPlan = '';
+function openBooking(plan) {
+  selectedPlan = plan;
+  document.getElementById('modal-plan-name').textContent = '📦 ' + plan;
+  document.getElementById('booking-modal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeBooking() {
+  document.getElementById('booking-modal').classList.remove('open');
+  document.body.style.overflow = '';
+}
+document.getElementById('booking-modal').addEventListener('click', function(e) {
+  if(e.target === this) closeBooking();
+});
+
+// ── FORM SUBMIT ──
+function submitLead() {
+  const name = document.getElementById('f-name').value.trim();
+  const phone = document.getElementById('f-phone').value.trim();
+  const biz = document.getElementById('f-biz').value.trim();
+  if(!name || !phone || !biz) {
+    alert('Please fill in your name, phone number, and business name.');
+    return;
+  }
+  // Build WhatsApp message with lead data
+  const type = document.getElementById('f-type').value;
+  const city = document.getElementById('f-city').value;
+  const msg = document.getElementById('f-msg').value;
+  const plan = document.getElementById('f-plan').value;
+  const email = document.getElementById('f-email').value;
+  
+  const wa_msg = `🔔 *New NexaFlow Lead*\n\n👤 *Name:* ${name}\n📞 *Phone:* ${phone}\n📧 *Email:* ${email || 'N/A'}\n🏢 *Business:* ${biz}\n🏷️ *Type:* ${type || 'N/A'}\n📍 *City:* ${city || 'N/A'}\n📦 *Interested in:* ${plan || 'N/A'}\n💬 *Challenge:* ${msg || 'N/A'}`;
+  
+  // Send to YOUR WhatsApp (replace number)
+  const waUrl = `https://wa.me/919369699864?text=${encodeURIComponent(wa_msg)}`;
+  window.open(waUrl, '_blank');
+  
+  document.getElementById('lead-form').style.display = 'none';
+  document.getElementById('form-success').style.display = 'block';
+}
+
+function submitBooking() {
+  const phone = document.getElementById('m-phone').value.trim();
+  const name = document.getElementById('m-name').value.trim();
+  const biz = document.getElementById('m-biz').value.trim();
+  const msg = document.getElementById('m-msg').value.trim();
+  
+  const wa_msg = `🔔 *New Booking — ${selectedPlan}*\n\n👤 *Name:* ${name || 'N/A'}\n📞 *Phone:* ${phone}\n🏢 *Business:* ${biz || 'N/A'}\n💬 *Note:* ${msg || 'None'}`;
+  
+  const waUrl = `https://wa.me/919369699864?text=${encodeURIComponent(wa_msg)}`;
+  window.open(waUrl, '_blank');
+  closeBooking();
+}
+
+// ── NAV ACTIVE ──
+window.addEventListener('scroll', () => {
+  const nav = document.querySelector('nav');
+  nav.style.boxShadow = window.scrollY > 20 ? '0 4px 30px rgba(0,0,0,0.4)' : 'none';
+});
+</script>
+</body>
+</html>
