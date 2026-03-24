@@ -118,6 +118,8 @@ nav ul a:hover{color:var(--cyan);}
 .hero-tag{display:inline-flex;align-items:center;gap:8px;background:rgba(0,212,255,0.08);border:1px solid rgba(0,212,255,0.25);padding:6px 16px;border-radius:100px;font-size:0.78rem;font-weight:600;color:var(--cyan);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:24px;}
 .hero-tag::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--lime);animation:blink 1.5s infinite;}
 @keyframes blink{0%,100%{opacity:1;}50%{opacity:0;}}
+@keyframes badgePulse{0%,100%{box-shadow:0 0 18px rgba(0,212,255,0.6),0 0 6px rgba(0,212,255,0.4);}50%{box-shadow:0 0 30px rgba(0,212,255,0.9),0 0 12px rgba(0,212,255,0.6);}}
+@keyframes neonPulse{0%,100%{box-shadow:0 0 16px rgba(0,212,255,0.6),0 0 32px rgba(163,255,71,0.3);}50%{box-shadow:0 0 24px rgba(0,212,255,0.9),0 0 48px rgba(163,255,71,0.5),0 0 64px rgba(0,212,255,0.2);}}
 h1{font-family:'Syne',sans-serif;font-size:clamp(2.4rem,4.5vw,3.9rem);font-weight:800;line-height:1.05;margin-bottom:12px;letter-spacing:-1px;}
 h1 .grad{background:linear-gradient(135deg,var(--cyan),var(--lime));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
 .hero-slogan{font-size:1.25rem;font-weight:600;color:var(--lime);letter-spacing:0.02em;margin-bottom:20px;}
@@ -452,10 +454,25 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:60px
     </div>
   </div>
   <div class="hero-visual">
-    <div style="display:flex;flex-direction:column;gap:0;font-family:'Outfit',sans-serif;width:340px;animation:float 3s ease-in-out infinite;">
+    <div style="display:flex;flex-direction:column;gap:0;font-family:'Outfit',sans-serif;width:340px;animation:float 3s ease-in-out infinite;position:relative;">
+
+      <!-- NEON OPTIMIZED BADGE -->
+      <div style="position:absolute;top:-14px;right:0px;z-index:10;
+        background:linear-gradient(135deg,#00d4ff,#2563eb);
+        color:#060b14;font-size:0.68rem;font-weight:800;
+        padding:5px 13px;border-radius:100px;
+        letter-spacing:0.07em;text-transform:uppercase;white-space:nowrap;
+        box-shadow:0 0 18px rgba(0,212,255,0.6),0 0 6px rgba(0,212,255,0.4);
+        animation:badgePulse 2.5s ease-in-out infinite;
+        display:flex;align-items:center;gap:5px;">
+        <span style="font-size:0.75rem;">⚡</span> Optimized
+      </div>
 
       <!-- GBP Card -->
       <div style="background:#0d1626;border-radius:18px;border:1px solid rgba(0,212,255,0.18);overflow:hidden;box-shadow:0 8px 40px rgba(0,212,255,0.18),0 2px 12px rgba(0,0,0,0.5),0 0 0 1px rgba(0,212,255,0.07);">
+
+        <!-- Neon badge -->
+        <div style="position:absolute;top:-14px;right:-10px;z-index:10;background:linear-gradient(135deg,#00d4ff,#a3ff47);color:#060b14;font-size:0.65rem;font-weight:800;padding:5px 12px;border-radius:100px;text-transform:uppercase;letter-spacing:0.08em;white-space:nowrap;box-shadow:0 0 16px rgba(0,212,255,0.6),0 0 32px rgba(163,255,71,0.3);animation:neonPulse 2s ease-in-out infinite;">⚡ Optimized</div>
 
         <!-- Cover photo strip -->
         <div style="height:72px;background:linear-gradient(135deg,#0a1929 0%,#0d2a4a 60%,#0a3d6b 100%);position:relative;display:flex;align-items:flex-end;padding:0 16px;border-bottom:1px solid rgba(0,212,255,0.12);">
@@ -725,9 +742,11 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:60px
         <li class="gold-check">Category & attribute optimization</li>
         <li class="gold-check">Business description overhaul</li>
         <li class="gold-check">Quick wins checklist for Maps ranking</li>
+        <li class="dim">WhatsApp automation</li>
+        <li class="dim">Catalogue design</li>
       </ul>
-      <button class="plan-btn" onclick="window.open('https://rzp.io/rzp/lDiqrDo', '_blank')">
-        Start Now →
+      <button class="plan-btn gold-btn" onclick="window.open('https://wa.me/919369699864?text=Hi%20NexaFlow!%20I%20want%20the%20GBP%20Boost%20Lite%20plan%20for%20%E2%82%B9499.', '_blank')">
+        Get Started →
       </button>
     </div>
 
@@ -738,7 +757,6 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:60px
       <div class="plan-price">₹699 <small></small></div>
       <div class="plan-cycle">One-time setup</div>
       <ul class="plan-features">
-        <li>Everything in GBP Boost Lite</li>
         <li>WhatsApp auto-reply setup</li>
         <li>1 professional catalogue</li>
         <li>Lead capture form</li>
@@ -960,18 +978,18 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:60px
   <!-- CASE STUDY CARDS -->
   <div class="cs-grid">
 
-    <!-- Case Study 1 — Dentist -->
+    <!-- Case Study 1 — Gym -->
     <div class="cs-card fade-up">
-      <div class="cs-industry-badge gym-badge">🩺Dental Clinic · Kanpur</div>
-      <div class="cs-client">Saluja Dento Max Fac Centre</div>
-      <div class="cs-challenge">"We were ranking low on Google. Competitors with worse facilities were getting all the walk-ins."</div>
+      <div class="cs-industry-badge gym-badge">🏋️ Gym · Lucknow</div>
+      <div class="cs-client">FitZone Performance Gym</div>
+      <div class="cs-challenge">"We were invisible on Google. Competitors with worse facilities were getting all the walk-ins."</div>
 
       <div class="cs-what">
         <div class="cs-what-title">What we did</div>
         <div class="cs-what-items">
-          <div class="cs-what-item"><span class="cs-dot"></span>Complete GBP keyword overhaul — "Dentist near me Kanpur", "best dentist Ashok Nagar"</div>
+          <div class="cs-what-item"><span class="cs-dot"></span>Complete GBP keyword overhaul — "gym near me Lucknow", "best gym Gomti Nagar"</div>
           <div class="cs-what-item"><span class="cs-dot"></span>WhatsApp auto-reply with membership menu + trial booking flow</div>
-          <div class="cs-what-item"><span class="cs-dot"></span>Lead capture form + Review Template for Google</div>
+          <div class="cs-what-item"><span class="cs-dot"></span>Lead capture form + 10-day AI follow-up sequence</div>
         </div>
       </div>
 
@@ -1260,16 +1278,21 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:60px
     <div class="lead-form-wrap fade-up">
       <h3>Tell Us About<br>Your Business</h3>
       <p>Fill this form and we'll reach out within 24 hours with your free audit + a custom plan recommendation.</p>
-      <div id="lead-form">
+
+      <form id="lead-form" action="https://formspree.io/f/xlgpqzjb" method="POST" onsubmit="handleFormSubmit(event)">
+        <!-- Formspree hidden redirect — keep blank so we handle success in JS -->
+        <input type="hidden" name="_next" value="">
+        <input type="hidden" name="_subject" value="🔔 New NexaFlow Lead — Free Audit Request">
+
         <div class="form-row">
-          <div class="form-group"><label>Your Name *</label><input type="text" id="f-name" placeholder="Ravi Sharma" required></div>
-          <div class="form-group"><label>Phone Number *</label><input type="tel" id="f-phone" placeholder="+91 98765 43210" required></div>
+          <div class="form-group"><label>Your Name *</label><input type="text" name="name" placeholder="Ravi Sharma" required></div>
+          <div class="form-group"><label>Phone Number *</label><input type="tel" name="phone" placeholder="+91 98765 43210" required></div>
         </div>
-        <div class="form-group"><label>Business Email</label><input type="email" id="f-email" placeholder="you@business.com"></div>
-        <div class="form-group"><label>Business Name *</label><input type="text" id="f-biz" placeholder="e.g. FitLife Gym, PropEdge Realty" required></div>
+        <div class="form-group"><label>Business Email</label><input type="email" name="email" placeholder="you@business.com"></div>
+        <div class="form-group"><label>Business Name *</label><input type="text" name="business_name" placeholder="e.g. FitLife Gym, PropEdge Realty" required></div>
         <div class="form-group">
           <label>Business Type *</label>
-          <select id="f-type">
+          <select name="business_type" required>
             <option value="">Select your industry</option>
             <option>Real Estate / Property</option>
             <option>Gym / Fitness Centre</option>
@@ -1281,11 +1304,11 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:60px
             <option>Other</option>
           </select>
         </div>
-        <div class="form-group"><label>City / Location</label><input type="text" id="f-city" placeholder="Lucknow, Delhi, Mumbai..."></div>
-        <div class="form-group"><label>What's Your Biggest Challenge?</label><textarea id="f-msg" placeholder="e.g. I don't show up on Google Maps... / I get enquiries but no one converts... / I want more leads from WhatsApp..."></textarea></div>
+        <div class="form-group"><label>City / Location</label><input type="text" name="city" placeholder="Lucknow, Delhi, Mumbai..."></div>
+        <div class="form-group"><label>What's Your Biggest Challenge?</label><textarea name="challenge" placeholder="e.g. I don't show up on Google Maps... / I get enquiries but no one converts... / I want more leads from WhatsApp..."></textarea></div>
         <div class="form-group">
           <label>Interested In</label>
-          <select id="f-plan">
+          <select name="interested_in">
             <option value="">Select a plan or service</option>
             <option>Free Audit Only</option>
             <option>GBP Boost Lite – ₹499 (One-time)</option>
@@ -1296,9 +1319,10 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:60px
             <option>Not sure yet — need advice</option>
           </select>
         </div>
-        <button class="submit-btn" onclick="submitLead()">📩 Submit & Get Free Audit</button>
+        <button type="submit" class="submit-btn" id="form-submit-btn">📩 Submit & Get Free Audit</button>
         <p class="form-note">🔒 Your details are private and never shared. We'll contact you on WhatsApp within 24 hours.</p>
-      </div>
+      </form>
+
       <div class="form-success" id="form-success">✅ Request received! We'll reach out to you on WhatsApp within 24 hours with your free audit report.</div>
     </div>
   </div>
@@ -1441,20 +1465,33 @@ document.getElementById('booking-modal').addEventListener('click', function(e) {
   if(e.target === this) closeBooking();
 });
 
-function submitLead() {
-  const name = document.getElementById('f-name').value.trim();
-  const phone = document.getElementById('f-phone').value.trim();
-  const biz = document.getElementById('f-biz').value.trim();
-  if(!name || !phone || !biz) { alert('Please fill in your name, phone number, and business name.'); return; }
-  const type = document.getElementById('f-type').value;
-  const city = document.getElementById('f-city').value;
-  const msg = document.getElementById('f-msg').value;
-  const plan = document.getElementById('f-plan').value;
-  const email = document.getElementById('f-email').value;
-  const wa_msg = `🔔 *New NexaFlow Lead*\n\n👤 *Name:* ${name}\n📞 *Phone:* ${phone}\n📧 *Email:* ${email || 'N/A'}\n🏢 *Business:* ${biz}\n🏷️ *Type:* ${type || 'N/A'}\n📍 *City:* ${city || 'N/A'}\n📦 *Interested in:* ${plan || 'N/A'}\n💬 *Challenge:* ${msg || 'N/A'}`;
-  window.open(`https://wa.me/919369699864?text=${encodeURIComponent(wa_msg)}`, '_blank');
-  document.getElementById('lead-form').style.display = 'none';
-  document.getElementById('form-success').style.display = 'block';
+async function handleFormSubmit(e) {
+  e.preventDefault();
+  const btn = document.getElementById('form-submit-btn');
+  btn.textContent = '⏳ Sending...';
+  btn.disabled = true;
+
+  const form = document.getElementById('lead-form');
+  const data = new FormData(form);
+
+  try {
+    const res = await fetch(form.action, {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    });
+
+    if (res.ok) {
+      form.style.display = 'none';
+      document.getElementById('form-success').style.display = 'block';
+    } else {
+      btn.textContent = '⚠️ Error — Try Again';
+      btn.disabled = false;
+    }
+  } catch(err) {
+    btn.textContent = '⚠️ Error — Try Again';
+    btn.disabled = false;
+  }
 }
 
 function submitBooking() {
