@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lead Generation Services India | NexaFlow AI — More Leads, Less Effort</title>
+    <meta name="description"
+        content="AI-powered lead generation services for small businesses across India. WhatsApp automation, Google Maps ranking, lead capture forms & AI follow-up. Based in Lucknow, serving all of India.">
+    <meta name="keywords"
+        content="lead generation services India, lead generation Lucknow, WhatsApp lead generation, AI lead generation India, B2C lead generation small business, lead generation Kanpur, automated lead capture India, NexaFlow AI">
+    <meta name="robots" content="index, follow">
+    <meta name="geo.region" content="IN-UP">
+    <meta name="geo.placename" content="Lucknow, Uttar Pradesh, India">
+    <meta name="geo.position" content="26.8467;80.9462">
+    <meta name="ICBM" content="26.8467, 80.9462">
+    <link rel="canonical" href="https://nexaflow.bar/lead-generation-services-india">
+    <meta property="og:title" content="Lead Generation Services India | NexaFlow AI">
+    <meta property="og:description"
+        content="AI-powered lead generation for gyms, coaching, real estate and local businesses across India. Starting ₹499.">
+    <meta property="og:url" content="https://nexaflow.bar/lead-generation-services-india">
+    <meta property="og:locale" content="en_IN">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://nexaflow.bar/#business",
+      "name": "NexaFlow AI Automations",
+      "url": "https://nexaflow.bar/",
+      "telephone": "+919369699864",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "545 KA/AV 218, Avanti Vihar, Alambagh",
+        "addressLocality": "Lucknow",
+        "addressRegion": "Uttar Pradesh",
+        "postalCode": "226017",
+        "addressCountry": "IN"
+      },
+      "geo": { "@type": "GeoCoordinates", "latitude": 26.8467, "longitude": 80.9462 },
+      "areaServed": "India"
+    },
+    {
+      "@type": "Service",
+      "name": "Lead Generation Services India",
+      "provider": { "@id": "https://nexaflow.bar/#business" },
+      "areaServed": "India",
+      "description": "AI-powered lead generation services for small businesses across India — WhatsApp automation, Google Maps ranking, lead capture forms, and AI follow-up sequences."
+    }
+  ]
+}
+</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Outfit:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --bg: #060b14;
+            --surface: #0d1626;
+            --surface2: #111e35;
+            --cyan: #00d4ff;
+            --lime: #a3ff47;
+            --gold: #ffb830;
+            --blue: #2563eb;
+            --text: #e8f0fe;
+            --muted: #6b7fa3;
+            --border: rgba(0, 212, 255, 0.12);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            overflow-x: hidden;
+        }
+
+        .grid-bg {
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+            pointer-events: none;
+            background-image: linear-gradient(rgba(0, 212, 255, 0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 212, 255, 0.03) 1px, transparent 1px);
+            background-size: 60px 60px;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 200;
+            padding: 0 48px;
+            height: 68px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: rgba(6, 11, 20, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .logo {
+            font-family: 'Syne', sans-serif;
+            font-size: 1.35rem;
+            font-weight: 800;
+            text-decoration: none;
+            color: var(--text);
+        }
+
+        .logo span {
+            color: var(--cyan);
+        }
+
+        .logo sup {
+            font-size: 0.55rem;
+            color: var(--lime);
+            vertical-align: super;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 0;
+            align-items: center;
+            list-style: none;
+        }
+
+        .nav-links>li {
+            position: relative;
+        }
+
+        .nav-links>li>a {
+            text-decoration: none;
+            color: var(--muted);
+            font-size: 0.85rem;
+            font-weight: 500;
+            padding: 24px 14px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            transition: color 0.2s;
+        }
+
+        .nav-links>li>a:hover,
+        .nav-links>li:hover>a {
+            color: var(--cyan);
+        }
+
+        .nav-links>li>a .chevron {
+            font-size: 0.65rem;
+            transition: transform 0.2s;
+        }
+
+        .nav-links>li:hover>a .chevron {
+            transform: rotate(180deg);
+        }
+
+        .dropdown {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            min-width: 280px;
+            background: #0d1626;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 8px;
+            opacity: 0;
+            pointer-events: none;
+            transform: translateY(8px);
+            transition: all 0.2s;
+            z-index: 300;
+        }
+
+        .nav-links>li:hover .dropdown {
+            opacity: 1;
+            pointer-events: all;
+            transform: translateY(0);
+        }
+
+        .dropdown a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 12px;
+            border-radius: 7px;
+            text-decoration: none;
+            color: var(--muted);
+            font-size: 0.83rem;
+            transition: all 0.2s;
+        }
+
+        .dropdown a:hover {
+            background: rgba(0, 212, 255, 0.07);
+            color: var(--cyan);
+        }
+
+        .dropdown a .d-title {
+            font-weight: 600;
+            color: var(--text);
+            display: block;
+            font-size: 0.82rem;
+        }
+
+        .dropdown a .d-sub {
+            display: block;
+            font-size: 0.72rem;
+            color: var(--muted);
+            margin-top: 1px;
+        }
+
+        .nav-cta {
+            background: linear-gradient(135deg, var(--cyan), var(--blue));
+            color: #060b14 !important;
+            padding: 9px 20px;
+            border-radius: 6px;
+            font-weight: 700 !important;
+            font-size: 0.82rem !important;
+            margin-left: 12px;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 4px;
+        }
+
+        .hamburger span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background: var(--cyan);
+            border-radius: 2px;
+        }
+
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 68px;
+            left: 0;
+            right: 0;
+            background: rgba(6, 11, 20, 0.97);
+            backdrop-filter: blur(20px);
+            padding: 20px;
+            border-bottom: 1px solid var(--border);
+            z-index: 199;
+            flex-direction: column;
+            gap: 4px;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+
+        .mobile-menu.open {
+            display: flex;
+        }
+
+        .mobile-menu a {
+            text-decoration: none;
+            color: var(--text);
+            font-size: 1rem;
+            font-weight: 500;
+            padding: 12px 16px;
+            border-radius: 8px;
+            display: block;
+            transition: all 0.2s;
+        }
+
+        .mobile-menu a:hover {
+            background: rgba(0, 212, 255, 0.08);
+            color: var(--cyan);
+        }
+
+        .mobile-menu .mob-section {
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--cyan);
+            padding: 10px 16px 4px;
+        }
+
+        .hero {
+            min-height: 90vh;
+            padding: 110px 48px 70px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+        }
+
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.75rem;
+            color: var(--muted);
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .breadcrumb a {
+            color: var(--muted);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .breadcrumb a:hover {
+            color: var(--cyan);
+        }
+
+        .breadcrumb span {
+            color: var(--border);
+        }
+
+        .hero-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(0, 212, 255, 0.08);
+            border: 1px solid rgba(0, 212, 255, 0.25);
+            padding: 6px 16px;
+            border-radius: 100px;
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: var(--cyan);
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .hero-tag::before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--lime);
+            animation: blink 1.5s infinite;
+        }
+
+        @keyframes blink {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+            }
+        }
+
+        h1 {
+            font-family: 'Syne', sans-serif;
+            font-size: clamp(2.2rem, 4.5vw, 3.8rem);
+            font-weight: 800;
+            line-height: 1.05;
+            margin-bottom: 16px;
+            letter-spacing: -1px;
+        }
+
+        h1 .grad {
+            background: linear-gradient(135deg, var(--cyan), var(--lime));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-sub {
+            font-size: 1.05rem;
+            color: var(--muted);
+            line-height: 1.75;
+            max-width: 640px;
+            margin-bottom: 32px;
+        }
+
+        .hero-btns {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+
+        .btn-glow {
+            background: linear-gradient(135deg, var(--cyan), var(--blue));
+            color: #060b14;
+            padding: 14px 28px;
+            border-radius: 8px;
+            border: none;
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 700;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.25s;
+        }
+
+        .btn-glow:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 40px rgba(0, 212, 255, 0.3);
+        }
+
+        .btn-ghost {
+            background: transparent;
+            color: var(--cyan);
+            padding: 14px 28px;
+            border-radius: 8px;
+            border: 1px solid rgba(0, 212, 255, 0.35);
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.25s;
+        }
+
+        .btn-ghost:hover {
+            background: rgba(0, 212, 255, 0.07);
+        }
+
+        section {
+            padding: 70px 48px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .sec-label {
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--cyan);
+            margin-bottom: 12px;
+        }
+
+        h2 {
+            font-family: 'Syne', sans-serif;
+            font-size: clamp(1.7rem, 3vw, 2.6rem);
+            font-weight: 800;
+            line-height: 1.1;
+            letter-spacing: -0.5px;
+            margin-bottom: 14px;
+        }
+
+        h2 .grad {
+            background: linear-gradient(135deg, var(--cyan), var(--lime));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .sec-sub {
+            font-size: 0.95rem;
+            color: var(--muted);
+            line-height: 1.75;
+            max-width: 580px;
+            margin-bottom: 40px;
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 18px;
+        }
+
+        .card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 28px 24px;
+            transition: all 0.3s;
+        }
+
+        .card:hover {
+            border-color: rgba(0, 212, 255, 0.35);
+            transform: translateY(-4px);
+            box-shadow: 0 16px 50px rgba(0, 212, 255, 0.08);
+        }
+
+        .card-icon {
+            font-size: 1.8rem;
+            margin-bottom: 14px;
+        }
+
+        .card-title {
+            font-family: 'Syne', sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .card-desc {
+            font-size: 0.845rem;
+            color: var(--muted);
+            line-height: 1.65;
+        }
+
+        .results-bar {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            overflow: hidden;
+            margin-bottom: 48px;
+        }
+
+        .result-item {
+            padding: 24px;
+            text-align: center;
+            border-right: 1px solid var(--border);
+        }
+
+        .result-item:last-child {
+            border-right: none;
+        }
+
+        .result-num {
+            font-family: 'Syne', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--cyan);
+            margin-bottom: 4px;
+        }
+
+        .result-lbl {
+            font-size: 0.75rem;
+            color: var(--muted);
+        }
+
+        .flow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 40px;
+            padding: 36px;
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+        }
+
+        .flow-node {
+            background: rgba(0, 212, 255, 0.08);
+            border: 1px solid rgba(0, 212, 255, 0.2);
+            border-radius: 10px;
+            padding: 14px 18px;
+            text-align: center;
+            min-width: 110px;
+        }
+
+        .flow-node .fn-icon {
+            font-size: 1.4rem;
+            margin-bottom: 6px;
+        }
+
+        .flow-node .fn-label {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--text);
+        }
+
+        .flow-arrow {
+            color: var(--cyan);
+            font-size: 1.3rem;
+            flex-shrink: 0;
+        }
+
+        .industries-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 32px;
+        }
+
+        .ind-tag {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            padding: 8px 16px;
+            border-radius: 100px;
+            font-size: 0.82rem;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+
+        .ind-tag:hover {
+            border-color: var(--cyan);
+            color: var(--cyan);
+        }
+
+        .faq-list {
+            max-width: 720px;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid var(--border);
+            cursor: pointer;
+        }
+
+        .faq-item:first-child {
+            border-top: 1px solid var(--border);
+        }
+
+        .faq-q {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 0;
+            font-weight: 600;
+            font-size: 0.92rem;
+            gap: 16px;
+            transition: color 0.2s;
+        }
+
+        .faq-item:hover .faq-q {
+            color: var(--cyan);
+        }
+
+        .faq-icon {
+            font-size: 1.3rem;
+            color: var(--cyan);
+            flex-shrink: 0;
+            transition: transform 0.3s;
+        }
+
+        .faq-item.open .faq-icon {
+            transform: rotate(45deg);
+        }
+
+        .faq-a {
+            font-size: 0.875rem;
+            color: var(--muted);
+            line-height: 1.75;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.3s;
+        }
+
+        .faq-item.open .faq-a {
+            max-height: 200px;
+            padding-bottom: 18px;
+        }
+
+        .cta-sec {
+            background: linear-gradient(135deg, rgba(0, 212, 255, 0.06), rgba(37, 99, 235, 0.06));
+            border-top: 1px solid var(--border);
+            text-align: center;
+        }
+
+        footer {
+            background: var(--surface);
+            border-top: 1px solid var(--border);
+            padding: 48px 48px 28px;
+        }
+
+        .footer-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-bottom: 36px;
+        }
+
+        .footer-links-col h5 {
+            font-size: 0.72rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--cyan);
+            margin-bottom: 14px;
+        }
+
+        .footer-links-col ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 9px;
+        }
+
+        .footer-links-col ul a {
+            text-decoration: none;
+            color: var(--muted);
+            font-size: 0.845rem;
+            transition: color 0.2s;
+        }
+
+        .footer-links-col ul a:hover {
+            color: var(--cyan);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid var(--border);
+            padding-top: 22px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 14px;
+        }
+
+        .footer-bottom p {
+            font-size: 0.78rem;
+            color: var(--muted);
+        }
+
+        .footer-wa {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(37, 211, 102, 0.1);
+            border: 1px solid rgba(37, 211, 102, 0.25);
+            color: #25d366;
+            padding: 8px 18px;
+            border-radius: 100px;
+            font-size: 0.82rem;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .wa-float {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            z-index: 300;
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: #25d366;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            text-decoration: none;
+            box-shadow: 0 8px 32px rgba(37, 211, 102, 0.4);
+        }
+
+        @media(max-width:960px) {
+            nav {
+                padding: 0 20px;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            section,
+            .hero {
+                padding: 60px 24px;
+            }
+
+            .results-bar {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-inner {
+                flex-direction: column;
+                gap: 28px;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-bg"></div>
+    <nav>
+        <a href="/" class="logo">Nexa<span>Flow</span> <sup>AI</sup></a>
+        <ul class="nav-links">
+            <li>
+                <a href="#">Services <span class="chevron">▾</span></a>
+                <div class="dropdown">
+                    <a href="/google-business-profile-optimization-lucknow"><span style="font-size:1rem;">🗺️</span>
+                        <div><span class="d-title">GBP Optimization</span><span class="d-sub">Lucknow, Kanpur & nearby
+                                areas</span></div>
+                    </a>
+                    <a href="/seo-services-lucknow"><span style="font-size:1rem;">🔍</span>
+                        <div><span class="d-title">SEO Services</span><span class="d-sub">Rank higher on Google
+                                search</span></div>
+                    </a>
+                    <a href="/lead-generation-services-india"><span style="font-size:1rem;">📊</span>
+                        <div><span class="d-title">Lead Generation</span><span class="d-sub">More qualified leads for
+                                your business</span></div>
+                    </a>
+                    <a href="/website-development-lucknow"><span style="font-size:1rem;">💻</span>
+                        <div><span class="d-title">Website Development</span><span class="d-sub">Fast, converting
+                                websites in Lucknow</span></div>
+                    </a>
+                </div>
+            </li>
+            <li><a href="/#pricing">Pricing</a></li>
+            <li><a href="/#results">Results</a></li>
+            <li><a href="/#audit">Contact</a></li>
+            <li><a href="/#audit" class="nav-cta">Get Free Audit</a></li>
+        </ul>
+        <button class="hamburger" onclick="document.getElementById('mob').classList.toggle('open')"
+            aria-label="Menu"><span></span><span></span><span></span></button>
+    </nav>
+    <div class="mobile-menu" id="mob">
+        <a href="/">← Home</a>
+        <div class="mob-section">Services</div>
+        <a href="/google-business-profile-optimization-lucknow">🗺️ GBP Optimization — Lucknow</a>
+        <a href="/seo-services-lucknow">🔍 SEO Services — Lucknow</a>
+        <a href="/lead-generation-services-india">📊 Lead Generation — India</a>
+        <a href="/website-development-lucknow">💻 Website Development — Lucknow</a>
+        <a href="/#pricing">Pricing</a>
+        <a href="/#results">Results</a>
+        <a href="/#audit"
+            style="background:linear-gradient(135deg,var(--cyan),var(--blue));color:#060b14;font-weight:700;text-align:center;margin-top:8px;">Get
+            Free Audit</a>
+    </div>
+
+    <section class="hero">
+        <div class="breadcrumb"><a href="/">Home</a><span>›</span><a href="#">Services</a><span>›</span><span
+                style="color:var(--text);">Lead Generation — India</span></div>
+        <div class="hero-tag">AI-Powered Lead Generation — All India</div>
+        <h1>Lead Generation Services<br><span class="grad">for Indian Businesses</span></h1>
+        <p class="hero-sub">Stop losing leads to slow replies and missed enquiries. Our AI-powered lead generation
+            system captures, qualifies and follows up with every lead automatically — 24/7, on autopilot. Based in
+            Lucknow, serving businesses across India.</p>
+        <div class="hero-btns">
+            <a href="/#audit" class="btn-glow">📋 Get Free Lead Audit</a>
+            <a href="https://wa.me/919369699864?text=Hi%20NexaFlow!%20I%20want%20lead%20generation%20services%20for%20my%20business."
+                target="_blank" class="btn-ghost">💬 WhatsApp Us</a>
+        </div>
+    </section>
+
+    <section style="padding:0 48px 56px;z-index:1;position:relative;">
+        <div class="results-bar">
+            <div class="result-item">
+                <div class="result-num">18–35</div>
+                <div class="result-lbl">Qualified leads/month avg.</div>
+            </div>
+            <div class="result-item">
+                <div class="result-num">&lt;5 sec</div>
+                <div class="result-lbl">WhatsApp response time</div>
+            </div>
+            <div class="result-item">
+                <div class="result-num">0</div>
+                <div class="result-lbl">Leads lost to slow replies</div>
+            </div>
+            <div class="result-item">
+                <div class="result-num">All India</div>
+                <div class="result-lbl">Remote service available</div>
+            </div>
+        </div>
+    </section>
+
+    <section
+        style="background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+        <div class="sec-label">The System</div>
+        <h2>How Our Lead Generation<br><span class="grad">System Works</span></h2>
+        <p class="sec-sub">A complete, automated lead funnel — from Google Maps discovery to a qualified, ready-to-close
+            lead in your hands.</p>
+        <div class="cards-grid">
+            <div class="card">
+                <div class="card-icon">🗺️</div>
+                <div class="card-title">Google Maps Visibility</div>
+                <div class="card-desc">Your GBP ranked at the top when local customers search for your service —
+                    bringing warm, intent-driven traffic straight to your WhatsApp or website.</div>
+            </div>
+            <div class="card">
+                <div class="card-icon">💬</div>
+                <div class="card-title">WhatsApp Auto-Reply</div>
+                <div class="card-desc">Every enquiry gets an instant reply in under 5 seconds. AI sends service details,
+                    pricing, catalogue and collects the lead's information automatically.</div>
+            </div>
+            <div class="card">
+                <div class="card-icon">📋</div>
+                <div class="card-title">Lead Capture Forms</div>
+                <div class="card-desc">Smart forms embedded in your website and WhatsApp flow collect name, phone, email
+                    and requirements — fed directly into your lead tracker sheet.</div>
+            </div>
+            <div class="card">
+                <div class="card-icon">🤖</div>
+                <div class="card-title">AI Follow-Up Sequences</div>
+                <div class="card-desc">7–14 day automated follow-up sequences re-engage cold leads with perfectly timed
+                    messages — recovering deals you would have otherwise lost.</div>
+            </div>
+            <div class="card">
+                <div class="card-icon">📊</div>
+                <div class="card-title">Lead Dashboard</div>
+                <div class="card-desc">All leads, their details, status and follow-up history tracked in a clean Google
+                    Sheet dashboard. Know your pipeline at a glance — always.</div>
+            </div>
+            <div class="card">
+                <div class="card-icon">💻</div>
+                <div class="card-title">Converting Website</div>
+                <div class="card-desc">A fast, mobile-first website designed to turn visitors into leads — with clear
+                    CTAs, lead forms, WhatsApp chat and trust-building content.</div>
+            </div>
+        </div>
+        <div class="flow">
+            <div class="flow-node">
+                <div class="fn-icon">🗺️</div>
+                <div class="fn-label">Google Maps</div>
+            </div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-node" style="background:rgba(0,212,255,0.12);border-color:var(--cyan);">
+                <div class="fn-icon">💬</div>
+                <div class="fn-label">WA Auto-Reply</div>
+            </div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-node">
+                <div class="fn-icon">📋</div>
+                <div class="fn-label">Lead Captured</div>
+            </div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-node" style="background:rgba(163,255,71,0.08);border-color:rgba(163,255,71,0.3);">
+                <div class="fn-icon">🤖</div>
+                <div class="fn-label">AI Follow-Up</div>
+            </div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-node">
+                <div class="fn-icon">🤝</div>
+                <div class="fn-label">Deal Closed</div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="sec-label">Industries</div>
+        <h2>Lead Generation for<br><span class="grad">Every Indian Business</span></h2>
+        <p class="sec-sub">Our lead generation system is tailored for local B2C businesses across India — regardless of
+            your city or niche.</p>
+        <div class="cards-grid">
+            <div class="card">
+                <div class="card-icon">🏋️</div>
+                <div class="card-title">Gyms & Fitness Centres</div>
+                <div class="card-desc">Capture membership enquiries from Google Maps, deliver fee structure instantly on
+                    WhatsApp, and follow up with trial class offers automatically.</div>
+            </div>
+            <div class="card">
+                <div class="card-icon">🏠</div>
+                <div class="card-title">Real Estate & Property</div>
+                <div class="card-desc">Auto-send property catalogues, floor plans and pricing. Follow up with interested
+                    buyers for 14 days without lifting a finger.</div>
+            </div>
+            <div class="card">
+                <div class="card-icon">📚</div>
+                <div class="card-title">Coaching & EdTech</div>
+                <div class="card-desc">Send batch timings, fee structure and demo class links instantly. Book demo
+                    classes via WhatsApp bot — all automated.</div>
+            </div>
+            <div class="card">
+                <div class="card-icon">🏥</div>
+                <div class="card-title">Clinics & Healthcare</div>
+                <div class="card-desc">Appointment booking, doctor details and consultation fees delivered
+                    automatically. Reduce front desk load and never miss a patient inquiry.</div>
+            </div>
+            <div class="card">
+                <div class="card-icon">💇</div>
+                <div class="card-title">Salons & Beauty</div>
+                <div class="card-desc">Service menus, pricing and slot availability sent instantly. Capture booking
+                    requests on autopilot from Google Maps and Instagram.</div>
+            </div>
+            <div class="card">
+                <div class="card-icon">🍽️</div>
+                <div class="card-title">Restaurants & Cafés</div>
+                <div class="card-desc">Table bookings, menu delivery and event enquiries handled automatically. Turn
+                    Google Maps searchers into dining customers.</div>
+            </div>
+        </div>
+        <div class="industries-row">
+            <span class="ind-tag">🏗️ Construction</span>
+            <span class="ind-tag">🧑‍💻 IT Services</span>
+            <span class="ind-tag">⚖️ Law Firms</span>
+            <span class="ind-tag">🚗 Automobile</span>
+            <span class="ind-tag">🏨 Hotels</span>
+            <span class="ind-tag">📦 E-commerce</span>
+            <span class="ind-tag">+ Any local business</span>
+        </div>
+    </section>
+
+    <section style="background:var(--surface);border-top:1px solid var(--border);">
+        <div class="sec-label">FAQ</div>
+        <h2>Lead Generation<br><span class="grad">Questions Answered</span></h2>
+        <div style="height:24px;"></div>
+        <div class="faq-list">
+            <div class="faq-item" onclick="toggleFaq(this)">
+                <div class="faq-q">How is AI lead generation different from normal lead gen? <span
+                        class="faq-icon">+</span></div>
+                <div class="faq-a">Traditional lead generation stops at getting you an enquiry. Our AI system captures
+                    the lead, sends them relevant information instantly, captures their details, and follows up
+                    automatically for 7–14 days — meaning every lead gets nurtured without any manual work from you.
+                </div>
+            </div>
+            <div class="faq-item" onclick="toggleFaq(this)">
+                <div class="faq-q">Do I need a WhatsApp Business account? <span class="faq-icon">+</span></div>
+                <div class="faq-a">Yes. A WhatsApp Business account (free) is required for the automation. If you don't
+                    have one, we walk you through the setup in under 15 minutes during onboarding.</div>
+            </div>
+            <div class="faq-item" onclick="toggleFaq(this)">
+                <div class="faq-q">Can you generate leads for businesses outside Lucknow? <span
+                        class="faq-icon">+</span></div>
+                <div class="faq-a">Absolutely. NexaFlow is based in Lucknow but serves businesses across India — Delhi,
+                    Mumbai, Bengaluru, Chennai, Hyderabad, Pune and tier-2 cities. Everything is set up and managed
+                    remotely.</div>
+            </div>
+            <div class="faq-item" onclick="toggleFaq(this)">
+                <div class="faq-q">How long before I start seeing more leads? <span class="faq-icon">+</span></div>
+                <div class="faq-a">The WhatsApp automation and lead capture are live within 24–48 hours. Google Maps
+                    ranking improvements show within 7–14 days. Most clients see a significant uptick in qualified leads
+                    within the first 2–4 weeks.</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-sec">
+        <div class="sec-label">Get Started</div>
+        <h2>Ready to Get More Leads<br><span class="grad">on Autopilot?</span></h2>
+        <p style="font-size:0.95rem;color:var(--muted);max-width:500px;margin:16px auto 32px;line-height:1.7;">Start
+            with a free lead audit. We'll analyse your current lead flow and show you exactly how many leads you're
+            losing — and how to capture them.</p>
+        <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+            <a href="/#audit" class="btn-glow">📋 Get Free Lead Audit</a>
+            <a href="https://wa.me/919369699864?text=Hi%20NexaFlow!%20I%20want%20lead%20generation%20for%20my%20business."
+                target="_blank" class="btn-ghost">💬 WhatsApp Us</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-links-col">
+                <h5>Services</h5>
+                <ul>
+                    <li><a href="/google-business-profile-optimization-lucknow">GBP Optimization — Lucknow</a></li>
+                    <li><a href="/seo-services-lucknow">SEO Services — Lucknow</a></li>
+                    <li><a href="/lead-generation-services-india">Lead Generation — India</a></li>
+                    <li><a href="/website-development-lucknow">Website Development — Lucknow</a></li>
+                </ul>
+            </div>
+            <div class="footer-links-col">
+                <h5>Company</h5>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/#pricing">Pricing</a></li>
+                    <li><a href="/#audit">Free Audit</a></li>
+                    <li><a href="https://wa.me/919369699864" target="_blank">WhatsApp Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-links-col">
+                <h5>Contact</h5>
+                <ul>
+                    <li><a href="tel:+919369699864">+91 93696 99864</a></li>
+                    <li><a href="mailto:support@nexaflow.bar">support@nexaflow.bar</a></li>
+                    <li><a>545 KA/AV 218, Avanti Vihar</a></li>
+                    <li><a>Alambagh, Lucknow — 226017, UP</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 NexaFlow AI Automations, Lucknow, Uttar Pradesh, India</p>
+            <a href="https://wa.me/919369699864" target="_blank" class="footer-wa">💬 Chat on WhatsApp</a>
+        </div>
+    </footer>
+    <a href="https://wa.me/919369699864" target="_blank" class="wa-float" title="WhatsApp">💬</a>
+    <script>function toggleFaq(el) { const isOpen = el.classList.contains('open'); document.querySelectorAll('.faq-item').forEach(f => f.classList.remove('open')); if (!isOpen) el.classList.add('open'); }</script>
+</body>
+
+</html>
