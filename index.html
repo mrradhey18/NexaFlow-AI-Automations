@@ -88,7 +88,31 @@
             --border: rgba(0, 212, 255, 0.12);
             --glow: 0 0 40px rgba(0, 212, 255, 0.15);
         }
-
+[data-theme="light"] {
+    --bg: #f0f4ff;
+    --surface: #e8eef8;
+    --surface2: #dce5f5;
+    --cyan: #0066cc;
+    --lime: #3a8c00;
+    --gold: #c47a00;
+    --blue: #1a4fd6;
+    --text: #0d1626;
+    --muted: #4a5a7a;
+    --border: rgba(0, 100, 204, 0.15);
+    --glow: 0 0 40px rgba(0, 100, 204, 0.1);
+}
+[data-theme="light"] .grid-bg {
+    background-image: linear-gradient(rgba(0,100,204,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(0,100,204,0.04) 1px, transparent 1px);
+}
+[data-theme="light"] nav {
+    background: rgba(240,244,255,0.92);
+}
+[data-theme="light"] .hero-orb {
+    background: radial-gradient(circle, rgba(0,100,204,0.08) 0%, transparent 70%);
+}
+[data-theme="light"] .hero-orb2 {
+    background: radial-gradient(circle, rgba(58,140,0,0.06) 0%, transparent 70%);
+}
         * {
             margin: 0;
             padding: 0;
