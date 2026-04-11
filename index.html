@@ -66,23 +66,6 @@
     }
   ]
 }
-        function toggleTheme() {
-    const isDark = document.documentElement.getAttribute('data-theme') !== 'light';
-    document.documentElement.setAttribute('data-theme', isDark ? 'light' : 'dark');
-    document.getElementById('theme-toggle').textContent = isDark ? '☀️' : '🌙';
-    localStorage.setItem('nexaflow-theme', isDark ? 'light' : 'dark');
-}
-// Load saved theme on page load
-(function() {
-    const saved = localStorage.getItem('nexaflow-theme');
-    if (saved === 'light') {
-        document.documentElement.setAttribute('data-theme', 'light');
-        document.addEventListener('DOMContentLoaded', function() {
-            const btn = document.getElementById('theme-toggle');
-            if (btn) btn.textContent = '☀️';
-        });
-    }
-})();
 </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
