@@ -1,25 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-IN">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SEO Services in Lucknow & Kanpur | NexaFlow AI — Rank on Google</title>
   <meta name="description" content="Professional SEO services in Lucknow, Kanpur & Uttar Pradesh. Local SEO, on-page SEO, Google Maps ranking & content strategy. NexaFlow AI — trusted by local businesses.">
-  <meta name="keywords" content="SEO services Lucknow, SEO company Lucknow, local SEO Lucknow, SEO agency Kanpur, search engine optimization Lucknow, Google ranking Lucknow, website SEO Uttar Pradesh, NexaFlow AI SEO">
-  <meta name="robots" content="index, follow">
+  <meta name="author" content="NexaFlow AI Automations">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   <meta name="geo.region" content="IN-UP">
   <meta name="geo.placename" content="Lucknow, Uttar Pradesh, India">
   <meta name="geo.position" content="26.8467;80.9462">
   <meta name="ICBM" content="26.8467, 80.9462">
-  <link rel="canonical" href="https://nexaflow.bar/seo-services-lucknow">
-  <meta property="og:title" content="SEO Services in Lucknow | NexaFlow AI">
-  <meta property="og:description" content="Rank higher on Google in Lucknow, Kanpur & UP. Local SEO, GBP optimization, on-page SEO by NexaFlow AI.">
+
+  <!-- FIX 1: Canonical URL — must match the URL Google should index. Pick ONE and be consistent (with or without trailing slash). This matches the og:url below. -->
+  <link rel="canonical" href="https://nexaflow.bar/seo-services-lucknow/">
+
+  <!-- FIX 2: hreflang for India English targeting -->
+  <link rel="alternate" hreflang="en-IN" href="https://nexaflow.bar/seo-services-lucknow/">
+  <link rel="alternate" hreflang="x-default" href="https://nexaflow.bar/seo-services-lucknow/">
+
+  <!-- FIX 3: Complete Open Graph tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="SEO Services in Lucknow | NexaFlow AI — Rank on Google">
+  <meta property="og:description" content="Rank higher on Google in Lucknow, Kanpur & UP. Local SEO, GBP optimization, on-page SEO by NexaFlow AI. Free audit available.">
   <meta property="og:url" content="https://nexaflow.bar/seo-services-lucknow/">
+  <meta property="og:site_name" content="NexaFlow AI">
   <meta property="og:locale" content="en_IN">
+  <meta property="og:image" content="https://nexaflow.bar/og-seo-lucknow.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="NexaFlow AI SEO Services in Lucknow">
+
+  <!-- FIX 4: Twitter Card tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SEO Services in Lucknow | NexaFlow AI">
+  <meta name="twitter:description" content="Rank higher on Google in Lucknow & Kanpur. Local SEO, GBP optimization, on-page SEO. Free audit available.">
+  <meta name="twitter:image" content="https://nexaflow.bar/og-seo-lucknow.jpg">
+
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
+  <!-- FIX 5: Full Schema.org markup — LocalBusiness + Service + FAQPage + BreadcrumbList -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -30,6 +52,11 @@
         "name": "NexaFlow AI Automations",
         "url": "https://nexaflow.bar/",
         "telephone": "+919369699864",
+        "email": "support@nexaflow.bar",
+        "priceRange": "₹₹",
+        "image": "https://nexaflow.bar/og-seo-lucknow.jpg",
+        "logo": "https://nexaflow.bar/favicon.png",
+        "description": "SEO services, Google Maps ranking, web development and AI automation for businesses in Lucknow, Kanpur and across Uttar Pradesh.",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "545 KA/AV 218, Avanti Vihar, Alambagh",
@@ -38,15 +65,133 @@
           "postalCode": "226017",
           "addressCountry": "IN"
         },
-        "geo": { "@type": "GeoCoordinates", "latitude": 26.8467, "longitude": 80.9462 },
-        "areaServed": ["Lucknow","Kanpur","Unnao","Raebareli","Uttar Pradesh","India"]
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 26.8467,
+          "longitude": 80.9462
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+            "opens": "09:00",
+            "closes": "19:00"
+          }
+        ],
+        "areaServed": [
+          {"@type": "City", "name": "Lucknow"},
+          {"@type": "City", "name": "Kanpur"},
+          {"@type": "City", "name": "Unnao"},
+          {"@type": "City", "name": "Raebareli"},
+          {"@type": "State", "name": "Uttar Pradesh"}
+        ],
+        "sameAs": [
+          "https://wa.me/919369699864"
+        ]
       },
       {
         "@type": "Service",
+        "@id": "https://nexaflow.bar/seo-services-lucknow/#service",
         "name": "SEO Services Lucknow",
-        "provider": { "@id": "https://nexaflow.bar/#business" },
-        "areaServed": ["Lucknow","Kanpur","Uttar Pradesh"],
-        "description": "Local SEO, on-page SEO, Google Maps ranking and content strategy for businesses in Lucknow, Kanpur and across Uttar Pradesh."
+        "provider": {"@id": "https://nexaflow.bar/#business"},
+        "serviceType": "Search Engine Optimization",
+        "areaServed": [
+          {"@type": "City", "name": "Lucknow"},
+          {"@type": "City", "name": "Kanpur"},
+          {"@type": "State", "name": "Uttar Pradesh"}
+        ],
+        "description": "Local SEO, on-page SEO, Google Maps ranking and content strategy for businesses in Lucknow, Kanpur and across Uttar Pradesh.",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "INR",
+          "price": "1999",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "1999",
+            "priceCurrency": "INR",
+            "unitText": "per month"
+          }
+        },
+        "url": "https://nexaflow.bar/seo-services-lucknow/"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://nexaflow.bar/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Services",
+            "item": "https://nexaflow.bar/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "SEO Services Lucknow",
+            "item": "https://nexaflow.bar/seo-services-lucknow/"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How long does SEO take to show results in Lucknow?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Local SEO and Google Maps optimizations can show results within 7–30 days. Full organic SEO ranking improvements typically take 2–4 months, depending on competition in your niche in Lucknow or Kanpur."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is local SEO and why does my Lucknow business need it?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Local SEO helps your business appear when people nearby search for your service — like 'dentist near me' or 'gym in Gomti Nagar'. Without it, your competitors who are optimized will always show up first, even if your service is better."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is SEO better than Google Ads for local businesses in Lucknow?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "SEO and ads serve different purposes. Ads give immediate visibility but stop when you stop paying. SEO builds long-term organic ranking that brings free traffic indefinitely. For most Lucknow small businesses, SEO gives a much better long-term ROI."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you do SEO for businesses in Kanpur?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. We provide SEO services across Lucknow, Kanpur, and all cities in Uttar Pradesh. We do city-specific keyword research so your website ranks for searches in your specific location."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much does SEO cost for a small business in Lucknow?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "NexaFlow offers SEO starting from ₹1999/month as part of our Growth plan, which includes monthly content updates, GBP optimization, and WhatsApp automation. Our Premium plan at ₹5499/month includes full ongoing SEO. Get a free audit first to know exactly what you need."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://nexaflow.bar/seo-services-lucknow/#webpage",
+        "url": "https://nexaflow.bar/seo-services-lucknow/",
+        "name": "SEO Services in Lucknow & Kanpur | NexaFlow AI — Rank on Google",
+        "description": "Professional SEO services in Lucknow, Kanpur & Uttar Pradesh. Local SEO, on-page SEO, Google Maps ranking & content strategy. NexaFlow AI — trusted by local businesses.",
+        "isPartOf": {"@id": "https://nexaflow.bar/#business"},
+        "about": {"@id": "https://nexaflow.bar/seo-services-lucknow/#service"},
+        "inLanguage": "en-IN",
+        "breadcrumb": {"@type": "BreadcrumbList"}
       }
     ]
   }
@@ -811,7 +956,7 @@
             <div><span class="dd-title">GBP Optimization</span><span class="dd-sub">Lucknow, Kanpur & nearby areas</span></div>
           </a>
           <div class="dd-divider"></div>
-          <a class="dd-item" href="/seo-services-lucknow">
+          <a class="dd-item" href="/seo-services-lucknow/">
             <div class="dd-icon">🔍</div>
             <div><span class="dd-title">SEO Services</span><span class="dd-sub">Rank higher on Google search</span></div>
           </a>
@@ -842,7 +987,7 @@
     <a href="/" class="mob-link" onclick="toggleMenu()">← Home</a>
     <div class="mob-section">Services</div>
     <a class="mob-dd-link" href="/how-to-rank-your-google-business-profile-higher-nexaflow" onclick="toggleMenu()"><span>🗺️</span> GBP Optimization — Lucknow</a>
-    <a class="mob-dd-link" href="/seo-services-lucknow" onclick="toggleMenu()"><span>🔍</span> SEO Services — Lucknow</a>
+    <a class="mob-dd-link" href="/seo-services-lucknow/" onclick="toggleMenu()"><span>🔍</span> SEO Services — Lucknow</a>
     <a class="mob-dd-link" href="/generate-leads-for-businesses-nexaflow" onclick="toggleMenu()"><span>📊</span> Lead Generation — India</a>
     <a class="mob-dd-link" href="/web-development-in-lucknow-nexaflow" onclick="toggleMenu()"><span>💻</span> Website Development — Lucknow</a>
     <a href="/#pricing" class="mob-link" onclick="toggleMenu()">Pricing</a>
@@ -852,11 +997,13 @@
 
   <!-- ── HERO ── -->
   <section class="hero">
-    <div class="breadcrumb">
-      <a href="/">Home</a><span>›</span>
-      <a href="#">Services</a><span>›</span>
-      <span style="color:var(--text);">SEO Services — Lucknow</span>
-    </div>
+    <nav aria-label="Breadcrumb">
+      <div class="breadcrumb">
+        <a href="/">Home</a><span>›</span>
+        <a href="/#services">Services</a><span>›</span>
+        <span style="color:var(--text);" aria-current="page">SEO Services — Lucknow</span>
+      </div>
+    </nav>
     <div class="hero-tag">SEO Agency — Lucknow &amp; Kanpur</div>
     <h1>SEO Services in<br><span class="grad">Lucknow</span> That Actually Rank</h1>
     <p class="hero-sub">We help businesses in Lucknow, Kanpur and across Uttar Pradesh rank higher on Google Search and Maps — getting you more organic traffic, more local visibility, and more paying customers.</p>
@@ -869,7 +1016,7 @@
     </div>
     <div class="hero-btns">
       <a href="/#audit" class="btn-glow">📋 Get Free SEO Audit</a>
-      <a href="https://wa.me/919369699864?text=Hi%20NexaFlow!%20I%20want%20SEO%20services%20for%20my%20business%20in%20Lucknow." target="_blank" class="btn-ghost">💬 WhatsApp Us</a>
+      <a href="https://wa.me/919369699864?text=Hi%20NexaFlow!%20I%20want%20SEO%20services%20for%20my%20business%20in%20Lucknow." target="_blank" rel="noopener noreferrer" class="btn-ghost">💬 WhatsApp Us</a>
     </div>
   </section>
 
@@ -1076,7 +1223,7 @@
     </p>
     <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;" class="fade-up">
       <a href="/#audit" class="btn-glow">📋 Get Free SEO Audit</a>
-      <a href="https://wa.me/919369699864?text=Hi%20NexaFlow!%20I%20want%20SEO%20services%20in%20Lucknow." target="_blank" class="btn-ghost">💬 WhatsApp Us</a>
+      <a href="https://wa.me/919369699864?text=Hi%20NexaFlow!%20I%20want%20SEO%20services%20in%20Lucknow." target="_blank" rel="noopener noreferrer" class="btn-ghost">💬 WhatsApp Us</a>
     </div>
   </section>
 
@@ -1092,7 +1239,7 @@
         <h5>Services</h5>
         <ul>
           <li><a href="/how-to-rank-your-google-business-profile-higher-nexaflow">GBP Optimization</a></li>
-          <li><a href="/seo-services-lucknow">SEO Services</a></li>
+          <li><a href="/seo-services-lucknow/">SEO Services</a></li>
           <li><a href="/generate-leads-for-businesses-nexaflow">Lead Generation</a></li>
           <li><a href="/web-development-in-lucknow-nexaflow">Website Development</a></li>
         </ul>
@@ -1109,11 +1256,11 @@
     </div>
     <div class="footer-bottom">
       <p>© 2026 NexaFlow AI Automations, Lucknow, Uttar Pradesh, India</p>
-      <a href="https://wa.me/919369699864" target="_blank" class="footer-wa">💬 Chat on WhatsApp</a>
+      <a href="https://wa.me/919369699864" target="_blank" rel="noopener noreferrer" class="footer-wa">💬 Chat on WhatsApp</a>
     </div>
   </footer>
 
-  <a href="https://wa.me/919369699864?text=Hi%20NexaFlow!%20I%27m%20interested%20in%20SEO%20services%20for%20my%20business." target="_blank" class="wa-float" title="WhatsApp">💬</a>
+  <a href="https://wa.me/919369699864?text=Hi%20NexaFlow!%20I%27m%20interested%20in%20SEO%20services%20for%20my%20business." target="_blank" rel="noopener noreferrer" class="wa-float" title="WhatsApp NexaFlow AI">💬</a>
 
   <script>
     function toggleFaq(el) {
