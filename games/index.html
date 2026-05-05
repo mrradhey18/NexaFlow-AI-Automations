@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>SmileGuard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="ambient" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <div class="page">
+
+    <header class="header">
+      <div class="logo-wrap">
+        <div class="logo-bg"></div>
+        <span class="logo-icon">🦷</span>
+      </div>
+      <h1>Smile<span>Guard</span></h1>
+      <p class="tagline">Stop the germs. Protect the smile.</p>
+    </header>
+
+    <main class="card">
+
+      <div class="top-row">
+        <span class="diff-label">Difficulty</span>
+        <div class="seg" role="group" aria-label="Difficulty">
+          <button class="seg-btn active" id="btn-easy"   data-mode="easy"   aria-pressed="true">Easy</button>
+          <button class="seg-btn"        id="btn-medium" data-mode="medium" aria-pressed="false">Medium</button>
+        </div>
+      </div>
+
+      <div class="scores">
+        <div class="score-tile you-tile">
+          <span class="s-icon">🦷</span>
+          <span class="s-num" id="score-you">0</span>
+          <span class="s-lbl">You</span>
+        </div>
+        <div class="score-tile tie-tile">
+          <span class="s-num" id="score-draw">0</span>
+          <span class="s-lbl">Ties</span>
+        </div>
+        <div class="score-tile ai-tile">
+          <span class="s-icon">🦠</span>
+          <span class="s-num" id="score-ai">0</span>
+          <span class="s-lbl">Germs</span>
+        </div>
+      </div>
+
+      <div class="board-wrap">
+        <div class="board" id="board" role="grid" aria-label="Game board">
+          <div class="cell" data-index="0" role="gridcell" tabindex="0"></div>
+          <div class="cell" data-index="1" role="gridcell" tabindex="0"></div>
+          <div class="cell" data-index="2" role="gridcell" tabindex="0"></div>
+          <div class="cell" data-index="3" role="gridcell" tabindex="0"></div>
+          <div class="cell" data-index="4" role="gridcell" tabindex="0"></div>
+          <div class="cell" data-index="5" role="gridcell" tabindex="0"></div>
+          <div class="cell" data-index="6" role="gridcell" tabindex="0"></div>
+          <div class="cell" data-index="7" role="gridcell" tabindex="0"></div>
+          <div class="cell" data-index="8" role="gridcell" tabindex="0"></div>
+        </div>
+      </div>
+
+      <div class="turn-bar" id="turn-bar">
+        <span id="turn-text">Your turn 🦷</span>
+      </div>
+
+    </main>
+
+    <button class="fab" id="btn-restart" aria-label="Restart game" title="Restart">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/>
+      </svg>
+    </button>
+
+  </div>
+
+  <div class="overlay" id="result-overlay" hidden>
+    <div class="result-card">
+      <div class="result-emoji" id="result-emoji"></div>
+      <p class="result-msg"  id="result-msg"></p>
+      <button class="btn-again"  id="btn-again">Play Again 🔄</button>
+      <a class="btn-review" id="btn-review"
+         href="https://g.page/r/REPLACE_WITH_YOUR_GOOGLE_REVIEW_LINK/review"
+         target="_blank" rel="noopener noreferrer">
+        Leave a Review ⭐
+      </a>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
