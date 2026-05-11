@@ -12,14 +12,14 @@
 
   window.addEventListener('scroll', () => {
     const scrolled = window.scrollY;
-    const total    = document.documentElement.scrollHeight - window.innerHeight;
+    const total = document.documentElement.scrollHeight - window.innerHeight;
     bar.style.width = total > 0 ? (scrolled / total * 100) + '%' : '0%';
   }, { passive: true });
 })();
 
 /* ── 2. NAVBAR: SCROLL SHADOW + ACTIVE LINK ── */
 (function initNavbar() {
-  const navbar  = document.getElementById('navbar');
+  const navbar = document.getElementById('navbar');
   const navLinks = document.querySelectorAll('.nav-link');
   const sections = document.querySelectorAll('section[id]');
 
@@ -45,7 +45,7 @@
 
 /* ── 3. HAMBURGER / MOBILE MENU ── */
 (function initMobileMenu() {
-  const hamburger  = document.getElementById('hamburger');
+  const hamburger = document.getElementById('hamburger');
   const mobileMenu = document.getElementById('mobile-menu');
   if (!hamburger || !mobileMenu) return;
 
@@ -53,7 +53,7 @@
     hamburger.classList.toggle('open', open);
     mobileMenu.classList.toggle('open', open);
     hamburger.setAttribute('aria-expanded', String(open));
-    mobileMenu.setAttribute('aria-hidden',  String(!open));
+    mobileMenu.setAttribute('aria-hidden', String(!open));
     document.body.style.overflow = open ? 'hidden' : '';
   }
 
@@ -90,18 +90,18 @@
   const isMobile = () => window.innerWidth <= 768;
 
   // Mobile: click to toggle
-  dropdown.addEventListener('click', function(e) {
+  dropdown.addEventListener('click', function (e) {
     if (!isMobile()) return;
     e.stopPropagation();
     panel.classList.toggle('open');
   });
 
   // Desktop: hover
-  dropdown.addEventListener('mouseenter', function() {
+  dropdown.addEventListener('mouseenter', function () {
     if (isMobile()) return;
     panel.classList.add('open');
   });
-  dropdown.addEventListener('mouseleave', function() {
+  dropdown.addEventListener('mouseleave', function () {
     if (isMobile()) return;
     panel.classList.remove('open');
   });
@@ -112,7 +112,7 @@
   });
 
   // Close on outside click (mobile)
-  document.addEventListener('click', function(e) {
+  document.addEventListener('click', function (e) {
     if (!dropdown.contains(e.target)) panel.classList.remove('open');
   });
 })();
@@ -129,7 +129,7 @@
         observer.unobserve(entry.target);
       }
     });
-}, { threshold: 0.08, rootMargin: '0px 0px -20px 0px' });
+  }, { threshold: 0.08, rootMargin: '0px 0px -20px 0px' });
 
   targets.forEach(el => observer.observe(el));
 })();
@@ -142,17 +142,17 @@
   const easeOut = t => 1 - Math.pow(1 - t, 3);
 
   function animateCounter(el) {
-    const target   = parseFloat(el.dataset.count);
-    const suffix   = el.dataset.suffix || '';
-    const prefix   = el.dataset.prefix || '';
+    const target = parseFloat(el.dataset.count);
+    const suffix = el.dataset.suffix || '';
+    const prefix = el.dataset.prefix || '';
     const decimals = el.dataset.decimals ? parseInt(el.dataset.decimals) : 0;
     const duration = 1800;
-    const start    = performance.now();
+    const start = performance.now();
 
     function tick(now) {
-      const elapsed  = now - start;
+      const elapsed = now - start;
       const progress = Math.min(elapsed / duration, 1);
-      const value    = easeOut(progress) * target;
+      const value = easeOut(progress) * target;
       el.textContent = prefix + value.toFixed(decimals) + suffix;
       if (progress < 1) requestAnimationFrame(tick);
       else el.textContent = prefix + target.toFixed(decimals) + suffix;
@@ -200,8 +200,8 @@ function toggleFaq(item) {
 /* ── 8. FORM SUBMISSION ── */
 function handleFormSubmit(e) {
   e.preventDefault();
-  const form    = e.target;
-  const btn     = document.getElementById('form-submit-btn');
+  const form = e.target;
+  const btn = document.getElementById('form-submit-btn');
   const success = document.getElementById('form-success');
 
   // Basic validation
@@ -229,48 +229,48 @@ function handleFormSubmit(e) {
     body: new FormData(form),
     headers: { 'Accept': 'application/json' }
   })
-  .then(res => {
-    if (res.ok) {
-      form.reset();
-      if (success) {
-        success.style.display = 'block';
-        success.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    .then(res => {
+      if (res.ok) {
+        form.reset();
+        if (success) {
+          success.style.display = 'block';
+          success.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+        // Also send WhatsApp message
+        const name = form.querySelector('[name="name"]')?.value || 'Customer';
+        const business = form.querySelector('[name="business_name"]')?.value || 'their business';
+        const phone = form.querySelector('[name="phone"]')?.value || '';
+        const city = form.querySelector('[name="city"]')?.value || '';
+        setTimeout(() => {
+          const msg = encodeURIComponent(
+            `Hi NexaFlow! I just submitted the free audit form.\nName: ${name}\nBusiness: ${business}\nPhone: ${phone}\nCity: ${city}`
+          );
+          // Optional: open WhatsApp after form submit
+          // window.open(`https://wa.me/919369699864?text=${msg}`, '_blank');
+        }, 1000);
+      } else {
+        alert('Something went wrong. Please WhatsApp us directly at +91 93696 99864.');
       }
-      // Also send WhatsApp message
-      const name     = form.querySelector('[name="name"]')?.value || 'Customer';
-      const business = form.querySelector('[name="business_name"]')?.value || 'their business';
-      const phone    = form.querySelector('[name="phone"]')?.value || '';
-      const city     = form.querySelector('[name="city"]')?.value || '';
-      setTimeout(() => {
-        const msg = encodeURIComponent(
-          `Hi NexaFlow! I just submitted the free audit form.\nName: ${name}\nBusiness: ${business}\nPhone: ${phone}\nCity: ${city}`
-        );
-        // Optional: open WhatsApp after form submit
-        // window.open(`https://wa.me/919369699864?text=${msg}`, '_blank');
-      }, 1000);
-    } else {
-      alert('Something went wrong. Please WhatsApp us directly at +91 93696 99864.');
-    }
-  })
-  .catch(() => {
-    alert('Network error. Please WhatsApp us directly at +91 93696 99864.');
-  })
-  .finally(() => {
-    btn.classList.remove('loading');
-    btn.textContent = 'Submit & Get Free Audit';
-  });
+    })
+    .catch(() => {
+      alert('Network error. Please WhatsApp us directly at +91 93696 99864.');
+    })
+    .finally(() => {
+      btn.classList.remove('loading');
+      btn.textContent = 'Submit & Get Free Audit';
+    });
 }
 
 /* ── 9. SMOOTH SCROLL FOR ANCHOR LINKS ── */
 (function initSmoothScroll() {
   document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', e => {
-      const id  = a.getAttribute('href').slice(1);
-      const el  = document.getElementById(id);
+      const id = a.getAttribute('href').slice(1);
+      const el = document.getElementById(id);
       if (!el) return;
       e.preventDefault();
       const navH = document.getElementById('navbar')?.offsetHeight || 68;
-      const top  = el.getBoundingClientRect().top + window.scrollY - navH - 8;
+      const top = el.getBoundingClientRect().top + window.scrollY - navH - 8;
       window.scrollTo({ top, behavior: 'smooth' });
     });
   });
@@ -355,11 +355,11 @@ function handleFormSubmit(e) {
   document.querySelectorAll('.btn-primary, .form-submit, .nav-cta, .mob-cta').forEach(btn => {
     btn.style.position = 'relative';
     btn.style.overflow = 'hidden';
-    btn.addEventListener('click', function(e) {
-      const rect   = btn.getBoundingClientRect();
-      const size   = Math.max(rect.width, rect.height);
-      const x      = e.clientX - rect.left - size / 2;
-      const y      = e.clientY - rect.top  - size / 2;
+    btn.addEventListener('click', function (e) {
+      const rect = btn.getBoundingClientRect();
+      const size = Math.max(rect.width, rect.height);
+      const x = e.clientX - rect.left - size / 2;
+      const y = e.clientY - rect.top - size / 2;
       const ripple = document.createElement('span');
       ripple.style.cssText = `
         position: absolute;
@@ -435,11 +435,11 @@ function handleFormSubmit(e) {
 
   cards.forEach(card => {
     card.addEventListener('mousemove', e => {
-      const rect   = card.getBoundingClientRect();
-      const x      = e.clientX - rect.left;
-      const y      = e.clientY - rect.top;
-      const rotX   = ((y / rect.height) - 0.5) * -6;
-      const rotY   = ((x / rect.width)  - 0.5) *  6;
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      const rotX = ((y / rect.height) - 0.5) * -6;
+      const rotY = ((x / rect.width) - 0.5) * 6;
       card.style.transform = `perspective(600px) rotateX(${rotX}deg) rotateY(${rotY}deg) translateY(-5px)`;
     });
     card.addEventListener('mouseleave', () => {
@@ -540,7 +540,7 @@ function handleFormSubmit(e) {
       gcInput.textContent = q.slice(0, ci--);
       if (ci < 0) {
         del = false;
-        qi  = (qi + 1) % queries.length;
+        qi = (qi + 1) % queries.length;
         setTimeout(typeTick, 400);
         return;
       }
@@ -608,7 +608,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const isMobile = () => window.innerWidth <= 768;
 
-  btn.addEventListener('click', function(e) {
+  btn.addEventListener('click', function (e) {
     e.stopPropagation();
     icons.classList.toggle('open');
   });
@@ -622,5 +622,44 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.addEventListener('click', (e) => {
     if (!wrap.contains(e.target)) icons.classList.remove('open');
+  });
+})();
+
+/* ── DARK MODE TOGGLE ── */
+/* ── DARK MODE TOGGLE ── */
+(function initDarkMode() {
+  const btn = document.getElementById('theme-toggle');
+  const icon = document.getElementById('theme-icon');
+  if (!btn) return;
+
+  const sunIcon = '<circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>';
+  const moonIcon = '<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>';
+
+  // Check saved preference first, then device default
+  const saved = localStorage.getItem('nf_theme');
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+  const isDark = saved ? saved === 'dark' : prefersDark;
+
+  if (isDark) {
+    document.body.classList.add('dark');
+    icon.innerHTML = sunIcon;
+  } else {
+    icon.innerHTML = moonIcon;
+  }
+
+  btn.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+    const nowDark = document.body.classList.contains('dark');
+    localStorage.setItem('nf_theme', nowDark ? 'dark' : 'light');
+    icon.innerHTML = nowDark ? sunIcon : moonIcon;
+  });
+
+  // Listen for device theme changes (if no saved preference)
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+    if (!localStorage.getItem('nf_theme')) {
+      document.body.classList.toggle('dark', e.matches);
+      icon.innerHTML = e.matches ? sunIcon : moonIcon;
+    }
   });
 })();
