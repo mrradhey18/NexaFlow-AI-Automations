@@ -639,7 +639,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const saved = localStorage.getItem('nf_theme');
   const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-  const isDark = saved ? saved === 'dark' : prefersDark;
+  const isDark = saved ? saved === 'dark' : false;
 
   if (isDark) {
     document.body.classList.add('dark');
