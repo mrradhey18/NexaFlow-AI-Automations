@@ -3361,3 +3361,11 @@ body.dark .dp-text strong {
 body.dark .dp-text small {
   color: #94a3b8;
 }
+
+#social-float-btn {
+  transition: transform 0.3s ease;
+}
+
+#social-float-btn:hover {
+  transform: rotate(-15deg) scale(1.1);
+}
