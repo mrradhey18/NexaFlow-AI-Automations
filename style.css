@@ -2787,13 +2787,14 @@ a.fc-item:hover {
     transform: scaleX(-1);
   }
 
-  .google-card {
-    display: block;
-    width: 180px;
-    right: -10px;
-    top: 12px;
-    font-size: 0.7rem;
-  }
+ .google-card { 
+  display: block; 
+  width: min(220px, 95vw) !important; 
+  left: 130px; 
+  right: auto;
+  top: 12px; 
+  font-size: 0.7rem;
+}
 
   .stat-card-hero {
     display: flex;
