@@ -663,7 +663,7 @@ function _applyBranding() {
 
   if (c.logo) {
     document.getElementById("rfLogoWrap").innerHTML =
-      `<img src="${c.logo}" alt="${c.name}" style="width:100%;height:100%;object-fit:contain;padding:6px;" />`;
+`<img src="${c.logo}" alt="${c.name}" style="width:100%;height:100%;object-fit:contain;border-radius:14px;" />`
   }
 
   // Dynamically set emoji aspect labels from client highlights
