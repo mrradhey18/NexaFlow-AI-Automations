@@ -27,7 +27,7 @@ const RF_CLIENTS = {
       "the Dr Pachauri team",
     ],
     logoText:    "🌿",
-    logo:        "/logo.png/",
+    logo:        "/logo.jpg/",
     primaryColor: "#16a34a",
     primaryDark:  "#15803d",
     primarySoft:  "rgba(22,163,74,0.10)",
