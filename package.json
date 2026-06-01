@@ -1,0 +1,15 @@
+{
+  "name": "nexaflow-blog",
+  "version": "1.0.0",
+  "description": "Nexaflow SEO Blog Platform",
+  "scripts": {
+    "build": "node build.js",
+    "watch": "node build.js --watch"
+  },
+  "dependencies": {
+    "marked": "^9.1.6",
+    "gray-matter": "^4.0.3",
+    "fs-extra": "^11.2.0",
+    "chokidar": "^3.5.3"
+  }
+}
