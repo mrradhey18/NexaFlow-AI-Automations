@@ -1,3 +1,88 @@
+# ═══════════════════════════════════════════
+# robots.txt – nexaflow.bar
+# Updated: 2025-06-04
+# ═══════════════════════════════════════════
+
+# ── Allow all well-behaved crawlers ─────────
 User-agent: *
 Allow: /
+
+# ── Block non-public / utility paths ────────
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /login/
+Disallow: /api/
+Disallow: /tmp/
+Disallow: /private/
+Disallow: /*.json$
+Disallow: /cdn-cgi/
+
+# ── Block URL parameters that create duplicates ──
+Disallow: /*?utm_*
+Disallow: /*?ref=*
+Disallow: /*?source=*
+Disallow: /*?fbclid=*
+Disallow: /*?gclid=*
+
+# ── Crawl-delay for generic bots ────────────
+Crawl-delay: 5
+
+# ── Google ───────────────────────────────────
+User-agent: Googlebot
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Crawl-delay: 0
+
+User-agent: Googlebot-Image
+Allow: /
+Allow: /og-image.jpg
+Allow: /favicon.png
+Allow: /logo.png
+Allow: /hero-person.png
+Allow: /icons/
+
+# ── Bing ─────────────────────────────────────
+User-agent: Bingbot
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Crawl-delay: 2
+
+# ── Social preview crawlers ──────────────────
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+# ── Block AI training scrapers ───────────────
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: Omgilibot
+Disallow: /
+
+User-agent: cohere-ai
+Disallow: /
+
+# ── Sitemap ──────────────────────────────────
 Sitemap: https://nexaflow.bar/sitemap.xml
