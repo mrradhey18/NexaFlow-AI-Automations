@@ -1,137 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
   <!-- ══ HOME ══ -->
   <url>
     <loc>https://nexaflow.bar/</loc>
-    <lastmod>2025-06-04</lastmod>
+    <lastmod>2026-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://nexaflow.bar/og-image.jpg</image:loc>
-      <image:title>NexaFlow – #1 Local SEO &amp; Google Maps Ranking Experts</image:title>
+      <image:loc>https://nexaflow.bar/og-image.png</image:loc>
+      <image:title>NexaFlow – #1 Local SEO &amp; Google Maps Ranking Experts Lucknow</image:title>
     </image:image>
   </url>
 
-  <!-- ══ SERVICES (anchor sections on homepage) ══ -->
+  <!-- ══ ABOUT ══ -->
   <url>
-    <loc>https://nexaflow.bar/#what-we-do</loc>
-    <lastmod>2025-06-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://nexaflow.bar/#gbp-optimization</loc>
-    <lastmod>2025-06-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://nexaflow.bar/#local-seo</loc>
-    <lastmod>2025-06-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://nexaflow.bar/#review-qr-system</loc>
-    <lastmod>2025-06-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://nexaflow.bar/#seo-audit</loc>
-    <lastmod>2025-06-04</lastmod>
+    <loc>https://nexaflow.bar/About-Nexaflow-SEO-Agency-Lucknow</loc>
+    <lastmod>2026-06-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
+  <!-- ══ SERVICE PAGES ══ -->
   <url>
-    <loc>https://nexaflow.bar/#web-development</loc>
-    <lastmod>2025-06-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://nexaflow.bar/#social-media</loc>
-    <lastmod>2025-06-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- ══ STANDALONE PAGES ══ -->
-  <url>
-    <loc>https://nexaflow.bar/smart-review-qr</loc>
-    <lastmod>2025-06-04</lastmod>
+    <loc>https://nexaflow.bar/how-to-rank-your-google-business-profile-higher-nexaflow</loc>
+    <lastmod>2026-06-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://nexaflow.bar/og-image.jpg</image:loc>
-      <image:title>Smart Review QR System – NexaFlow</image:title>
+      <image:loc>https://nexaflow.bar/og-image.png</image:loc>
+      <image:title>GBP Optimization Lucknow – NexaFlow</image:title>
     </image:image>
   </url>
 
   <url>
-    <loc>https://nexaflow.bar/case-studies</loc>
-    <lastmod>2025-06-04</lastmod>
+    <loc>https://nexaflow.bar/seo-services-lucknow</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://nexaflow.bar/og-image.png</image:loc>
+      <image:title>SEO Services Lucknow – NexaFlow</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://nexaflow.bar/generate-leads-for-businesses-nexaflow</loc>
+    <lastmod>2026-06-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://nexaflow.bar/blog</loc>
-    <lastmod>2025-06-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://nexaflow.bar/about</loc>
-    <lastmod>2025-06-04</lastmod>
+    <loc>https://nexaflow.bar/web-development-in-lucknow-nexaflow</loc>
+    <lastmod>2026-06-11</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://nexaflow.bar/og-web-dev.png</image:loc>
+      <image:title>Website Development Lucknow – NexaFlow</image:title>
+    </image:image>
   </url>
 
   <url>
-    <loc>https://nexaflow.bar/contact</loc>
-    <lastmod>2025-06-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- ══ CONVERSION ANCHORS ══ -->
-  <url>
-    <loc>https://nexaflow.bar/#pricing</loc>
-    <lastmod>2025-06-04</lastmod>
+    <loc>https://nexaflow.bar/Social-Media-Management</loc>
+    <lastmod>2026-06-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://nexaflow.bar/#audit</loc>
-    <lastmod>2025-06-04</lastmod>
+    <loc>https://nexaflow.bar/smart-review-tool</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ══ TOOLS / CONVERSION PAGES ══ -->
+  <url>
+    <loc>https://nexaflow.bar/info-gmb-google-business-profile-free-audit-tool</loc>
+    <lastmod>2026-06-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://nexaflow.bar/#faq</loc>
-    <lastmod>2025-06-04</lastmod>
+    <loc>https://nexaflow.bar/Audit-your-google-business-profile</loc>
+    <lastmod>2026-06-11</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://nexaflow.bar/#case-studies</loc>
-    <lastmod>2025-06-04</lastmod>
+    <loc>https://nexaflow.bar/Dr-Pachauri-Review-Tool</loc>
+    <lastmod>2026-06-11</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- ══ BLOG ══ -->
+  <url>
+    <loc>https://nexaflow.bar/blog/GBP-Optimization-Guide</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://nexaflow.bar/blog/GBP-Optimization-Guide/rank-1.webp</image:loc>
+      <image:title>The Complete GBP Optimization Guide – NexaFlow</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://nexaflow.bar/blog/why-your-business-needs-a-website</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
 </urlset>
