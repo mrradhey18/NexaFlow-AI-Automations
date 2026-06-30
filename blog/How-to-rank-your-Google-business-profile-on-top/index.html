@@ -396,11 +396,7 @@ h1.title{
 .article a.inline-link{color:var(--blue-deep);font-weight:600;text-decoration:underline;text-decoration-color:#BFD3FF;text-underline-offset:2px}
 .article a.inline-link:hover{text-decoration-color:var(--blue)}
 
-  .author-logo {
-    width: 40px;
-    height: 40px;
-    object-fit: contain;
-}
+
   
 .callout{
   background:var(--bg-panel);
@@ -577,6 +573,40 @@ footer{
   h1.title{font-size:1.85rem}
   .ladder-head{flex-direction:column}
   .ladder-stat{text-align:left}
+}
+
+  .author {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.author-logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.author span {
+  font-size: 14px;
+}
+
+/* Mobile: shrink it down further */
+@media (max-width: 480px) {
+  .author {
+    gap: 5px;
+  }
+
+  .author-logo {
+    width: 18px;
+    height: 18px;
+  }
+
+  .author span {
+    font-size: 11px;
+  }
 }
 </style>
 </head>
