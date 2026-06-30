@@ -178,12 +178,39 @@ a{color:inherit}
   transition:width .1s linear;
 }
 
-  .author-logo {
-    width: 40px;
-    height: 40px;
-    object-fit: contain;
+.author {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
+.author-logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.author span {
+  font-size: 14px;
+}
+
+/* Mobile: shrink it down further */
+@media (max-width: 480px) {
+  .author {
+    gap: 5px;
+  }
+
+  .author-logo {
+    width: 18px;
+    height: 18px;
+  }
+
+  .author span {
+    font-size: 11px;
+  }
+}
 /* ---------- Header ---------- */
 .site-header{
   position:sticky;top:0;z-index:50;
