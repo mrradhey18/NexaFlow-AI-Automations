@@ -11,7 +11,7 @@
   <meta name="author" content="NexaFlow">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   <meta name="theme-color" content="#ffffff">
-  <link rel="canonical" href="https://nexaflow.bar/About-Nexaflow-SEO-Agency-Lucknow/">
+  <link rel="canonical" href="https://gonexaflow.com/About-Nexaflow-SEO-Agency-Lucknow/">
 
   <!-- ══ GEO META ══ -->
   <meta name="geo.region" content="IN-UP">
@@ -25,18 +25,18 @@
 
   <!-- ══ OPEN GRAPH ══ -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://nexaflow.bar/About-Nexaflow-SEO-Agency-Lucknow/">
+  <meta property="og:url" content="https://gonexaflow.com/About-Nexaflow-SEO-Agency-Lucknow/">
   <meta property="og:site_name" content="NexaFlow">
   <meta property="og:title" content="About NexaFlow | #1 Digital Marketing Agency in Lucknow">
   <meta property="og:description" content="We help local businesses in Lucknow & across UP rank higher on Google, build stunning websites, grow on social media, and establish powerful brands.">
-  <meta property="og:image" content="https://nexaflow.bar/og-image.png">
+  <meta property="og:image" content="https://gonexaflow.com/og-image.png">
   <meta property="og:locale" content="en_IN">
 
   <!-- ══ TWITTER ══ -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="About NexaFlow | Digital Marketing Agency Lucknow">
   <meta name="twitter:description" content="GBP Optimization, Local SEO, Website Design, App Development, Logo Design, Social Media & Brand Positioning in Lucknow, UP.">
-  <meta name="twitter:image" content="https://nexaflow.bar/og-image.png">
+  <meta name="twitter:image" content="https://gonexaflow.com/og-image.png">
 
   <!-- ══ FAVICON ══ -->
   <link rel="icon" type="image/png" href="/favicon.png">
@@ -49,12 +49,12 @@
     "@graph": [
       {
         "@type": "LocalBusiness",
-        "@id": "https://nexaflow.bar/#business",
+        "@id": "https://gonexaflow.com/#business",
         "name": "NexaFlow",
         "description": "NexaFlow is a full-service digital marketing agency in Lucknow, Uttar Pradesh. We offer Google Business Profile optimization, Local SEO, Website Design, App Development, Logo Design, Social Media Marketing, and Brand Positioning to help local businesses grow.",
-        "url": "https://nexaflow.bar/",
+        "url": "https://gonexaflow.com/",
         "telephone": "+919369699864",
-        "email": "support@nexaflow.bar",
+        "email": "support@gonexaflow.com",
         "foundingDate": "2025",
         "priceRange": "₹499 – ₹99999",
         "currenciesAccepted": "INR",
@@ -94,15 +94,15 @@
       },
       {
         "@type": "WebPage",
-        "@id": "https://nexaflow.bar/About-Nexaflow-SEO-Agency-Lucknow/",
-        "url": "https://nexaflow.bar/About-Nexaflow-SEO-Agency-Lucknow/",
+        "@id": "https://gonexaflow.com/About-Nexaflow-SEO-Agency-Lucknow/",
+        "url": "https://gonexaflow.com/About-Nexaflow-SEO-Agency-Lucknow/",
         "name": "About NexaFlow - Digital Marketing Agency Lucknow/",
         "description": "Learn about NexaFlow, Lucknow's leading digital marketing and SEO agency helping local businesses grow online.",
         "breadcrumb": {
           "@type": "BreadcrumbList",
           "itemListElement": [
-            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://nexaflow.bar/"},
-            {"@type": "ListItem", "position": 2, "name": "About Us", "item": "https://nexaflow.bar/About-Nexaflow-SEO-Agency-Lucknow/"}
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://gonexaflow.com/"},
+            {"@type": "ListItem", "position": 2, "name": "About Us", "item": "https://gonexaflow.com/About-Nexaflow-SEO-Agency-Lucknow/"}
           ]
         }
       }
@@ -853,19 +853,19 @@
 <!-- ══ NAVBAR ══ -->
 <nav id="navbar">
   <div class="nav-container">
-    <a href="https://nexaflow.bar/" class="nav-logo" aria-label="NexaFlow Home">
+    <a href="https://gonexaflow.com/" class="nav-logo" aria-label="NexaFlow Home">
       <img src="/favicon.png" alt="NexaFlow logo" class="nav-logo-icon" onerror="this.style.display='none'">
       <span class="logo-nexa">Nexa</span><span class="logo-flow">Flow</span>
     </a>
     <ul class="nav-links">
-      <li><a href="https://nexaflow.bar/" class="nav-link">Home</a></li>
-      <li><a href="https://nexaflow.bar/#services" class="nav-link">Services</a></li>
-      <li><a href="https://nexaflow.bar/#case-studies" class="nav-link">Case Studies</a></li>
-      <li><a href="https://nexaflow.bar/#blog" class="nav-link">Blog</a></li>
-      <li><a href="https://nexaflow.bar/About-Nexaflow-SEO-Agency-Lucknow/" class="nav-link active">About Us</a></li>
-      <li><a href="https://nexaflow.bar/#contact" class="nav-link">Contact</a></li>
+      <li><a href="https://gonexaflow.com/" class="nav-link">Home</a></li>
+      <li><a href="https://gonexaflow.com/#services" class="nav-link">Services</a></li>
+      <li><a href="https://gonexaflow.com/#case-studies" class="nav-link">Case Studies</a></li>
+      <li><a href="https://gonexaflow.com/#blog" class="nav-link">Blog</a></li>
+      <li><a href="https://gonexaflow.com/About-Nexaflow-SEO-Agency-Lucknow/" class="nav-link active">About Us</a></li>
+      <li><a href="https://gonexaflow.com/#contact" class="nav-link">Contact</a></li>
     </ul>
-    <a href="https://nexaflow.bar/info-gmb-google-business-profile-free-audit-tool/" class="nav-cta">Get Free Audit →</a>
+    <a href="https://gonexaflow.com/info-gmb-google-business-profile-free-audit-tool/" class="nav-cta">Get Free Audit →</a>
     <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
@@ -874,13 +874,13 @@
 
 <!-- MOBILE MENU -->
 <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
-  <a href="https://nexaflow.bar/" class="mob-link">Home</a>
-  <a href="https://nexaflow.bar/#services" class="mob-link">Services</a>
-  <a href="https://nexaflow.bar/#case-studies" class="mob-link">Case Studies</a>
-  <a href="https://nexaflow.bar/#blog" class="mob-link">Blog</a>
-  <a href="https://nexaflow.bar/About-Nexaflow-SEO-Agency-Lucknow/" class="mob-link active">About Us</a>
-  <a href="https://nexaflow.bar/#contact" class="mob-link">Contact</a>
-  <a href="https://nexaflow.bar/info-gmb-google-business-profile-free-audit-tool/" class="mob-cta">Get Free Audit →</a>
+  <a href="https://gonexaflow.com/" class="mob-link">Home</a>
+  <a href="https://gonexaflow.com/#services" class="mob-link">Services</a>
+  <a href="https://gonexaflow.com/#case-studies" class="mob-link">Case Studies</a>
+  <a href="https://gonexaflow.com/#blog" class="mob-link">Blog</a>
+  <a href="https://gonexaflow.com/About-Nexaflow-SEO-Agency-Lucknow/" class="mob-link active">About Us</a>
+  <a href="https://gonexaflow.com/#contact" class="mob-link">Contact</a>
+  <a href="https://gonexaflow.com/info-gmb-google-business-profile-free-audit-tool/" class="mob-cta">Get Free Audit →</a>
 </div>
 
 <!-- ══ HERO ══ -->
@@ -899,7 +899,7 @@
         <div class="ah-stat"><strong>5★</strong><span>Client Rating</span></div>
         <div class="ah-stat"><strong>2025</strong><span>Founded in LKO</span></div>
       </div>
-      <a href="https://nexaflow.bar/info-gmb-google-business-profile-free-audit-tool/" class="btn-primary">Get Free Audit →</a>
+      <a href="https://gonexaflow.com/info-gmb-google-business-profile-free-audit-tool/" class="btn-primary">Get Free Audit →</a>
     </div>
     <div class="fade-right">
       <div class="about-hero-card">
@@ -1114,7 +1114,7 @@
 
         <!-- CTA -->
         <div class="af-cta-row">
-          <a href="https://nexaflow.bar/info-gmb-google-business-profile-free-audit-tool/" class="btn-primary">
+          <a href="https://gonexaflow.com/info-gmb-google-business-profile-free-audit-tool/" class="btn-primary">
             Get Free Audit
             <svg width="16" height="16" viewBox="0 0 18 18" fill="none"><path d="M3.75 9h10.5M10 4.75L14.25 9 10 13.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
@@ -1138,7 +1138,7 @@
     <p class="section-sub">Eight complete digital services under one roof — designed specifically for local businesses in Lucknow, Kanpur, and across Uttar Pradesh.</p>
     <div class="services-grid">
 
-      <a href="https://nexaflow.bar/how-to-rank-your-google-business-profile-higher-nexaflow" class="service-card fade-up">
+      <a href="https://gonexaflow.com/how-to-rank-your-google-business-profile-higher-nexaflow" class="service-card fade-up">
         <div class="svc-icon svc-blue">🗺️</div>
         <h3>GBP / GMB Profile Creation & SEO Optimization</h3>
         <p>We create and fully optimize your Google Business Profile (formerly Google My Business) so your business ranks in the Top 3 on Google Maps when customers in Lucknow search for your service. Includes keyword research, category optimization, photo uploads, Q&A setup, and ongoing Google Posts — everything Google needs to rank you higher, faster.</p>
@@ -1150,7 +1150,7 @@
         <span class="svc-learn">Learn More →</span>
       </a>
 
-      <a href="https://nexaflow.bar/#services" class="service-card fade-up delay-1">
+      <a href="https://gonexaflow.com/#services" class="service-card fade-up delay-1">
         <div class="svc-icon svc-green">⭐</div>
         <h3>Quick Review Tool — Smart QR Review System</h3>
         <p>More 5-star reviews = higher rankings and more trust. Our proprietary Quick Review QR System generates a custom QR code that takes customers directly to your Google review page in one tap. Place it at your reception, on receipts, or in WhatsApp follow-ups. Businesses using our system collect 40+ new reviews in the first month.</p>
@@ -1162,7 +1162,7 @@
         <span class="svc-learn">Learn More →</span>
       </a>
 
-      <a href="https://nexaflow.bar/seo-services-lucknow" class="service-card fade-up delay-2">
+      <a href="https://gonexaflow.com/seo-services-lucknow" class="service-card fade-up delay-2">
         <div class="svc-icon svc-purple">🔍</div>
         <h3>SEO for Website — Rank Higher on Google Search</h3>
         <p>Full on-page SEO, technical SEO, content optimization and link building to rank your website on page 1 of Google for high-intent keywords in Lucknow and Uttar Pradesh. We audit your existing site, fix technical errors, optimize every page, build local citations, and create SEO content that drives organic traffic month after month.</p>
@@ -1174,7 +1174,7 @@
         <span class="svc-learn">Learn More →</span>
       </a>
 
-      <a href="https://nexaflow.bar/web-development-in-lucknow-nexaflow" class="service-card fade-up delay-3">
+      <a href="https://gonexaflow.com/web-development-in-lucknow-nexaflow" class="service-card fade-up delay-3">
         <div class="svc-icon svc-orange">💻</div>
         <h3>Website Design & Development in Lucknow</h3>
         <p>Professional, fast, mobile-first websites built to convert visitors into customers. We design and develop business websites, landing pages, e-commerce stores, and portfolio sites for businesses across Lucknow. Every site we build is SEO-optimized from day one, loads in under 2 seconds, and looks great on every device.</p>
@@ -1186,7 +1186,7 @@
         <span class="svc-learn">Learn More →</span>
       </a>
 
-      <a href="https://nexaflow.bar/#contact" class="service-card fade-up">
+      <a href="https://gonexaflow.com/#contact" class="service-card fade-up">
         <div class="svc-icon svc-teal">📱</div>
         <h3>Software & App Development Lucknow</h3>
         <p>Custom mobile apps and software solutions for businesses in Lucknow and UP. Whether you need a customer-facing app, an internal management system, a booking platform, or an automation tool — our development team builds reliable, scalable software that solves real business problems and grows with your company.</p>
@@ -1198,7 +1198,7 @@
         <span class="svc-learn">Learn More →</span>
       </a>
 
-      <a href="https://nexaflow.bar/#contact" class="service-card fade-up delay-1">
+      <a href="https://gonexaflow.com/#contact" class="service-card fade-up delay-1">
         <div class="svc-icon svc-pink">🎨</div>
         <h3>Logo Design & Brand Identity Lucknow</h3>
         <p>Your logo is the face of your business. We design professional, memorable logos and complete brand identity kits — including business cards, letterheads, social media kits, and brand guidelines — for businesses in Lucknow. Every design is 100% original, delivered in all formats, and built to make a lasting first impression.</p>
@@ -1210,7 +1210,7 @@
         <span class="svc-learn">Learn More →</span>
       </a>
 
-      <a href="https://nexaflow.bar/#contact" class="service-card fade-up delay-2">
+      <a href="https://gonexaflow.com/#contact" class="service-card fade-up delay-2">
         <div class="svc-icon svc-yellow">📣</div>
         <h3>Social Media Marketing Lucknow</h3>
         <p>Strategic social media management for Instagram, Facebook, LinkedIn, and YouTube to build your audience, generate leads, and grow brand awareness in Lucknow and UP. We handle content creation, posting schedules, paid campaigns, influencer outreach, and performance reporting — so your social media actually drives real business results.</p>
@@ -1222,7 +1222,7 @@
         <span class="svc-learn">Learn More →</span>
       </a>
 
-      <a href="https://nexaflow.bar/#contact" class="service-card fade-up delay-3">
+      <a href="https://gonexaflow.com/#contact" class="service-card fade-up delay-3">
         <div class="svc-icon svc-indigo">🏆</div>
         <h3>Brand Positioning & Digital Strategy</h3>
         <p>Beyond logos and SEO — brand positioning is about making your business the obvious, trusted choice in your category across Lucknow. We develop your unique value proposition, messaging framework, competitive differentiation strategy, and a complete digital growth roadmap so every rupee you spend on marketing works harder and smarter.</p>
@@ -1316,7 +1316,7 @@
     <h2>Ready to Grow Your Business in Lucknow?</h2>
     <p>Get a free audit of your Google Business Profile, local rankings, and online presence. We'll tell you exactly what to fix — no cost, no commitment, no pressure.</p>
     <div class="cta-btns">
-      <a href="https://nexaflow.bar/info-gmb-google-business-profile-free-audit-tool/" class="btn-white">📋 Get Free Audit</a>
+      <a href="https://gonexaflow.com/info-gmb-google-business-profile-free-audit-tool/" class="btn-white">📋 Get Free Audit</a>
       <a href="https://wa.me/919369699864?text=Hi%20NexaFlow!%20I%20want%20to%20grow%20my%20business%20in%20Lucknow." target="_blank" rel="noopener" class="btn-wa">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
         WhatsApp Us
@@ -1330,7 +1330,7 @@
   <div class="footer-container">
     <div class="footer-top">
       <div class="footer-brand">
-        <a href="https://nexaflow.bar/" class="nav-logo" aria-label="NexaFlow Home">
+        <a href="https://gonexaflow.com/" class="nav-logo" aria-label="NexaFlow Home">
           <span class="logo-nexa">Nexa</span><span class="logo-flow">Flow</span>
         </a>
         <p>Lucknow's #1 digital marketing agency — helping local businesses rank higher on Google, build powerful brands, and grow bigger.</p>
@@ -1352,33 +1352,33 @@
       <div class="footer-col">
         <h5>Quick Links</h5>
         <ul>
-          <li><a href="https://nexaflow.bar/">Home</a></li>
-          <li><a href="https://nexaflow.bar/#services">Services</a></li>
-          <li><a href="https://nexaflow.bar/#case-studies">Case Studies</a></li>
-          <li><a href="https://nexaflow.bar/#blog">Blog</a></li>
-          <li><a href="https://nexaflow.bar/About-Nexaflow-SEO-Agency-Lucknow/">About Us</a></li>
-          <li><a href="https://nexaflow.bar/#contact">Contact</a></li>
+          <li><a href="https://gonexaflow.com/">Home</a></li>
+          <li><a href="https://gonexaflow.com/#services">Services</a></li>
+          <li><a href="https://gonexaflow.com/#case-studies">Case Studies</a></li>
+          <li><a href="https://gonexaflow.com/#blog">Blog</a></li>
+          <li><a href="https://gonexaflow.com/About-Nexaflow-SEO-Agency-Lucknow/">About Us</a></li>
+          <li><a href="https://gonexaflow.com/#contact">Contact</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h5>Our Services</h5>
         <ul>
-          <li><a href="https://nexaflow.bar/how-to-rank-your-google-business-profile-higher-nexaflow">GBP Optimization</a></li>
-          <li><a href="https://nexaflow.bar/seo-services-lucknow">Local SEO</a></li>
-          <li><a href="https://nexaflow.bar/#contact">Review QR System</a></li>
-          <li><a href="https://nexaflow.bar/web-development-in-lucknow-nexaflow">Website Design</a></li>
-          <li><a href="https://nexaflow.bar/#contact">App Development</a></li>
-          <li><a href="https://nexaflow.bar/#contact">Social Media</a></li>
+          <li><a href="https://gonexaflow.com/how-to-rank-your-google-business-profile-higher-nexaflow">GBP Optimization</a></li>
+          <li><a href="https://gonexaflow.com/seo-services-lucknow">Local SEO</a></li>
+          <li><a href="https://gonexaflow.com/#contact">Review QR System</a></li>
+          <li><a href="https://gonexaflow.com/web-development-in-lucknow-nexaflow">Website Design</a></li>
+          <li><a href="https://gonexaflow.com/#contact">App Development</a></li>
+          <li><a href="https://gonexaflow.com/#contact">Social Media</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h5>Resources</h5>
         <ul>
-          <li><a href="https://nexaflow.bar/#blog">SEO Blog</a></li>
-          <li><a href="https://nexaflow.bar/seo-services-lucknow">Local SEO Guide</a></li>
-          <li><a href="https://nexaflow.bar/how-to-rank-your-google-business-profile-higher-nexaflow">GBP Guide</a></li>
-          <li><a href="https://nexaflow.bar/#case-studies">Case Studies</a></li>
-          <li><a href="https://nexaflow.bar/#faq">FAQs</a></li>
+          <li><a href="https://gonexaflow.com/#blog">SEO Blog</a></li>
+          <li><a href="https://gonexaflow.com/seo-services-lucknow">Local SEO Guide</a></li>
+          <li><a href="https://gonexaflow.com/how-to-rank-your-google-business-profile-higher-nexaflow">GBP Guide</a></li>
+          <li><a href="https://gonexaflow.com/#case-studies">Case Studies</a></li>
+          <li><a href="https://gonexaflow.com/#faq">FAQs</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -1387,9 +1387,9 @@
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 0110 2.18 2 2 0 0112 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L16.09 8a16 16 0 006.92 6.92z"/></svg>
           +91 93696 99864
         </a>
-        <a href="mailto:support@nexaflow.bar" class="fc-item">
+        <a href="mailto:support@gonexaflow.com" class="fc-item">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          support@nexaflow.bar
+          support@gonexaflow.com
         </a>
         <span class="fc-item">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
