@@ -608,6 +608,28 @@ footer{
     font-size: 11px;
   }
 }
+  .row-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.row-label {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.75);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 480px) {
+  .row-label {
+    font-size: 11px;
+    white-space: normal;
+  }
+}
 </style>
 </head>
 <body>
@@ -676,43 +698,68 @@ footer{
 </div>
   </section>
 
-  <div class="ladder-card reveal">
-    <div class="ladder">
-      <div class="ladder-head">
-        <div>
-          <h2>Where local search clicks actually go</h2>
-          <p>Share of clicks across the Google local 3-pack vs. everything else, by position.</p>
-        </div>
-        <div class="ladder-stat">
-          <div class="num">44<span class="unit">%</span></div>
-          <div class="lbl">of clicks go to the top 3</div>
-        </div>
+ <div class="ladder-card reveal">
+  <div class="ladder">
+    <div class="ladder-head">
+      <div>
+        <h2>Where local search clicks actually go</h2>
+        <p>Share of clicks across the Google local 3-pack vs. everything else, by position.</p>
       </div>
-      <div class="rows">
-        <div class="row r1">
-          <div class="pos">1</div>
-          <div class="track"><div class="fill" data-pct="18"></div></div>
-          <div class="pct">17.8%</div>
-        </div>
-        <div class="row r2">
-          <div class="pos">2</div>
-          <div class="track"><div class="fill" data-pct="15"></div></div>
-          <div class="pct">15.4%</div>
-        </div>
-        <div class="row r3">
-          <div class="pos">3</div>
-          <div class="track"><div class="fill" data-pct="15"></div></div>
-          <div class="pct">15.1%</div>
-        </div>
-        <div class="row r4">
-          <div class="pos">4+</div>
-          <div class="track"><div class="fill" data-pct="6"></div></div>
-          <div class="pct">&lt;6%</div>
-        </div>
+      <div class="ladder-stat">
+        <div class="num">44<span class="unit">%</span></div>
+        <div class="lbl">of clicks go to the top 3</div>
       </div>
-      <div class="ladder-foot">Based on aggregated local-pack click-through data, 2025&ndash;2026. Source noted at the end of this guide.</div>
     </div>
+
+    <div class="rows" role="list">
+      <div class="row r1" role="listitem">
+        <div class="pos" aria-hidden="true">1</div>
+        <div class="row-content">
+          <div class="row-label">Google local 3-pack — Position 1</div>
+          <div class="track">
+            <div class="fill" data-pct="18" role="meter" aria-valuenow="18" aria-valuemin="0" aria-valuemax="100" aria-label="Position 1 in the Google local 3-pack receives 17.8% of clicks"></div>
+          </div>
+        </div>
+        <div class="pct">17.8%</div>
+      </div>
+
+      <div class="row r2" role="listitem">
+        <div class="pos" aria-hidden="true">2</div>
+        <div class="row-content">
+          <div class="row-label">Google local 3-pack — Position 2</div>
+          <div class="track">
+            <div class="fill" data-pct="15" role="meter" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" aria-label="Position 2 in the Google local 3-pack receives 15.4% of clicks"></div>
+          </div>
+        </div>
+        <div class="pct">15.4%</div>
+      </div>
+
+      <div class="row r3" role="listitem">
+        <div class="pos" aria-hidden="true">3</div>
+        <div class="row-content">
+          <div class="row-label">Google local 3-pack — Position 3</div>
+          <div class="track">
+            <div class="fill" data-pct="15" role="meter" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" aria-label="Position 3 in the Google local 3-pack receives 15.1% of clicks"></div>
+          </div>
+        </div>
+        <div class="pct">15.1%</div>
+      </div>
+
+      <div class="row r4" role="listitem">
+        <div class="pos" aria-hidden="true">4+</div>
+        <div class="row-content">
+          <div class="row-label">Outside the local 3-pack — Position 4 and beyond</div>
+          <div class="track">
+            <div class="fill" data-pct="6" role="meter" aria-valuenow="6" aria-valuemin="0" aria-valuemax="100" aria-label="Positions 4 and beyond receive less than 6% of clicks"></div>
+          </div>
+        </div>
+        <div class="pct">&lt;6%</div>
+      </div>
+    </div>
+
+    <div class="ladder-foot">Based on aggregated local-pack click-through data, 2025&ndash;2026. Source noted at the end of this guide.</div>
   </div>
+</div>
   
   <article class="article">
     <p>If your business isn't showing up in those top three map results when someone searches "near me," you're not just ranking lower &mdash; you're <strong>invisible to most of the people looking for you.</strong> This guide walks through exactly how to fix that, using nothing but the free Google Business Profile dashboard. No jargon, no guesswork.</p>
