@@ -17,9 +17,11 @@
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   <meta name="theme-color" content="#ffffff">
   <link rel="canonical" href="https://gonexaflow.com/">
-  <link rel="stylesheet" href="style.css">
+<link rel="preload" href="style.css" as="style">
+<link rel="stylesheet" href="style.css">
   <link rel="manifest" href="manifest.json">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" crossorigin="anonymous">
+<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
   <!-- ══════════════════════════════════════════
        GEO / LOCATION META TAGS
   ══════════════════════════════════════════ -->
@@ -41,7 +43,7 @@
   <meta property="og:title" content="NexaFlow | Rank Higher on Google Maps & Get More Calls">
   <meta property="og:description"
     content="We help local businesses appear in the Top 3 Google results, get more calls, more customers and more growth. Free audit available.">
-  <meta property="og:image" content="https://gonexaflow.com/og-image.png">
+  <meta property="og:image" content="https://gonexaflow.com/og-image.webp">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:locale" content="en_IN">
@@ -54,14 +56,14 @@
   <meta name="twitter:title" content="NexaFlow | #1 Google Maps Ranking Experts">
   <meta name="twitter:description"
     content="GBP Optimization, Local SEO, Review QR System & Website SEO. Get more calls from Google Maps. Free audit.">
-  <meta name="twitter:image" content="https://gonexaflow.com/og-image.png">
+  <meta name="twitter:image" content="https://gonexaflow.com/og-image.webp">
 
   <!-- ═════════════════════════════════════
        FAVICONS
   ══════════════════════════════════════════ -->
-  <link rel="icon" type="image/png" href="favicon.png">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="preload" as="image" href="hero-person.png">
+  <link rel="icon" type="image/webp" href="favicon.webp">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.webp">
+<link rel="preload" as="image" href="hero-person.webp">
   <!-- ══════════════════════════════════════════
        SCHEMA.ORG STRUCTURED DATA (JSON-LD)
   ══════════════════════════════════════════ -->
@@ -290,9 +292,11 @@
   ══════════════════════════════════════════ -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet">
+  <link rel="preload" as="style"
+  href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;600;700&display=swap"
+  onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;600;700&display=swap"></noscript>
 
   <!-- ══════════════════════════════════════════
        STYLESHEETS
@@ -307,7 +311,7 @@
   <nav id="navbar">
     <div class="nav-container">
     <a href="https://gonexaflow.com" class="nav-logo" aria-label="NexaFlow Home">
-  <img src="favicon.png" alt="NexaFlow logo icon" class="nav-logo-icon" onerror="this.style.display='none'">
+  <img src="favicon.webp" alt="NexaFlow logo icon" class="nav-logo-icon" onerror="this.style.display='none'">
   <div style="display:flex; flex-direction:column; gap:0px;">
     <div><span class="logo-nexa">Nexa</span><span class="logo-flow">Flow</span></div>
     <span style="font-size:0.55rem; font-weight:700; color:#38bdf8; letter-spacing:0.08em; text-transform:uppercase; line-height:1;">Rank Higher. Grow Faster</span>
@@ -391,6 +395,7 @@
       →</a>
   </div>
 
+  <main>
   <!-- ══════════════════════════════════════════
        HERO SECTION
   ══════════════════════════════════════════ -->
@@ -451,8 +456,7 @@
       <div class="hero-right fade-up delay-2">
         <!-- Person illustration placeholder -->
         <div class="hero-person-wrap">
-          <div class="hero-person-bg"><img src="hero-person.png" alt="alt="NexaFlow Local SEO Expert Lucknow India""
-              class="hero-person-img"></div>
+        <div class="hero-person-bg"><img src="hero-person.webp" alt="NexaFlow Local SEO Expert Lucknow India" class="hero-person-img" fetchpriority="high" width="600" height="600"></div>
 
           <!-- Google Search Result Card -->
          <div class="google-card" aria-label="Google Search Result showing Top 3 position">
@@ -520,14 +524,12 @@
           <!-- +230% stat card -->
           <div class="stat-card-hero" aria-label="230% more calls achieved">
             <div class="sc-graph">
-              <svg width="80" height="36" viewBox="0 0 80 36">
-                <svg width="80" height="36" viewBox="0 0 80 36">
-                  <polyline points="0,30 15,28 22,32 35,18 45,22 58,8 70,12 80,4" stroke="#22c55e" stroke-width="2.5"
-                    fill="none" stroke-linecap="round" stroke-linejoin="round" />
-                  <polyline points="72,4 80,4 80,12" stroke="#22c55e" stroke-width="2.5" fill="none"
-                    stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-              </svg>
+            <svg width="80" height="36" viewBox="0 0 80 36">
+  <polyline points="0,30 15,28 22,32 35,18 45,22 58,8 70,12 80,4" stroke="#22c55e" stroke-width="2.5"
+    fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  <polyline points="72,4 80,4 80,12" stroke="#22c55e" stroke-width="2.5" fill="none"
+    stroke-linecap="round" stroke-linejoin="round" />
+</svg>
             </div>
             <div class="sc-text">
               <strong>+230%</strong>
@@ -603,7 +605,7 @@
           aria-label="GBP Optimization service">
           <!-- GBP Optimization -->
           <div class="svc-icon-wrap">
-            <img src="icon-gbp.png" alt="GBP Optimization" width="48" height="48">
+            <img src="icon-gbp.webp" alt="GBP Optimization" width="48" height="48">
           </div>
           <h3>GBP Optimization</h3>
           <p>Optimize your Google Business Profile to rank in top 3 and get more calls.</p>
@@ -613,7 +615,7 @@
         <a href="seo-services-lucknow" class="service-card fade-up delay-1" aria-label="Local SEO service">
           <!-- Local SEO -->
           <div class="svc-icon-wrap">
-            <img src="icon-local-seo.png" alt="Local SEO" width="48" height="48">
+            <img src="icon-local-seo.webp" alt="Local SEO" width="48" height="48">
           </div>
           <h3>Local SEO</h3>
           <p>Rank higher in local search results and dominate your area for faster growth.</p>
@@ -623,7 +625,7 @@
         <a href="smart-review-tool" class="service-card fade-up delay-2" aria-label="Review QR System service">
           <!-- Review QR -->
           <div class="svc-icon-wrap">
-            <img src="icon-qr.png" alt="Review QR System" width="48" height="48">
+            <img src="icon-qr.webp" alt="Review QR System" width="48" height="48">
           </div>
           <h3>Review QR System</h3>
           <p>Get more 5-star reviews with our smart QR review system automatically.</p>
@@ -633,7 +635,7 @@
         <a href="Social-Media-Management" class="service-card fade-up delay-1" aria-label="Social Media service">
           <!--Socil-media--->
           <div class="svc-icon-wrap">
-            <img src="icon-media.png" alt="Social Media" width="48" height="48">
+            <img src="icon-media.webp" alt="Social Media" width="48" height="48">
           </div>
           <h3>Social Media</h3>
           <p>Professional Reels, Instagram management, and social media growth for businesses in Lucknow and Uttar Pradesh.</p>
@@ -644,7 +646,7 @@
           aria-label="Web Development service">
           <!-- Web Development -->
           <div class="svc-icon-wrap">
-            <img src="icon-website-seo.png" alt="Web Development" width="48" height="48">
+            <img src="icon-website-seo.webp" alt="Web Development" width="48" height="48">
           </div>
           <h3>Web Development</h3>
           <p>On-page, technical &amp; content SEO to rank your website higher on Google.</p>
@@ -806,7 +808,7 @@
 
         <div class="process-step fade-up">
           <div class="ps-icon-wrap ps-blue">
-            <img src="audit.png" alt="Audit" width="48" height="48">
+            <img src="audit.webp" alt="Audit" width="48" height="48">
           </div>
           <div class="ps-num">1</div>
           <h3>Audit</h3>
@@ -821,7 +823,7 @@
 
         <div class="process-step fade-up delay-1">
           <div class="ps-icon-wrap ps-blue">
-            <img src="gear.png" alt="Optimize" width="48" height="48">
+            <img src="gear.webp" alt="Optimize" width="48" height="48">
           </div>
           <div class="ps-num">2</div>
           <h3>Optimize</h3>
@@ -836,7 +838,7 @@
 
         <div class="process-step fade-up delay-2">
           <div class="ps-icon-wrap ps-blue">
-            <img src="grow.png" alt="Rank & Grow" width="48" height="48">
+            <img src="grow.webp" alt="Rank & Grow" width="48" height="48">
           </div>
           <div class="ps-num">3</div>
           <h3>Rank &amp; Grow</h3>
@@ -1198,6 +1200,8 @@
     </div>
   </section>
 
+  </main>
+
   <!-- ══════════════════════════════════════════
        FOOTER
   ══════════════════════════════════════════ -->
@@ -1252,7 +1256,7 @@
         </div>
 
         <div class="footer-col">
-          <h5>Quick Links</h5>
+          <h3>Quick Links</h3>
           <ul>
             <li><a href="/">Home</a></li>
             <li><a href="#services">Services</a></li>
@@ -1264,7 +1268,7 @@
         </div>
 
         <div class="footer-col">
-          <h5>Our Services</h5>
+          <h3>Our Services</h3>
           <ul>
             <li><a href="how-to-rank-your-google-business-profile-higher-nexaflow">GBP Optimization</a></li>
             <li><a href="seo-services-lucknow">Local SEO</a></li>
@@ -1276,7 +1280,7 @@
         </div>
 
         <div class="footer-col">
-          <h5>Resources</h5>
+          <h3>Resources</h3>
           <ul>
             <li><a href="#blog">SEO Blog</a></li>
             <li><a href="seo-services-lucknow">Local SEO Guide</a></li>
@@ -1287,7 +1291,7 @@
         </div>
 
         <div class="footer-col footer-contact-col">
-          <h5>Get In Touch</h5>
+          <h3>Get In Touch</h3>
           <div class="footer-contact-items">
             <a href="tel:+919369699864" class="fc-item">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -1341,34 +1345,34 @@
   <div id="social-float-wrap"
     style="position:fixed; bottom:max(28px, calc(env(safe-area-inset-bottom) + 28px)); right:max(24px, calc(env(safe-area-inset-right) + 24px)); z-index:799; display:flex; flex-direction:column; align-items:center; gap:8px;">
     <div id="social-float-icons" style="display:flex; flex-direction:column; gap:8px; align-items:center;">
-      <a href="https://www.instagram.com/nexaflow.seo" target="_blank" rel="noopener"
-        style="width:40px; height:40px; border-radius:50%; background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888); display:flex; align-items:center; justify-content:center; box-shadow:0 4px 12px rgba(0,0,0,0.2); opacity:0; transform:translateY(10px); transition:all 0.3s;"
-        class="social-float-icon">
+      <a href="https://www.instagram.com/nexaflow.seo" target="_blank" rel="noopener" aria-label="NexaFlow on Instagram"
+  style="width:40px; height:40px; border-radius:50%; background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888); display:flex; align-items:center; justify-content:center; box-shadow:0 4px 12px rgba(0,0,0,0.2); opacity:0; transform:translateY(10px); transition:all 0.3s;"
+  class="social-float-icon">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
           <rect x="2" y="2" width="20" height="20" rx="5" />
           <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
           <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
         </svg>
       </a>
-      <a href="https://www.facebook.com/share/18PyWBaoUw/" target="_blank" rel="noopener"
-        style="width:40px; height:40px; border-radius:50%; background:#1877f2; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 12px rgba(0,0,0,0.2); opacity:0; transform:translateY(10px); transition:all 0.3s 0.05s;"
-        class="social-float-icon">
+      <a href="https://www.facebook.com/share/18PyWBaoUw/" target="_blank" rel="noopener" aria-label="NexaFlow on Facebook"
+  style="width:40px; height:40px; border-radius:50%; background:#1877f2; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 12px rgba(0,0,0,0.2); opacity:0; transform:translateY(10px); transition:all 0.3s 0.05s;"
+  class="social-float-icon">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="white">
           <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
         </svg>
       </a>
       <a href="https://wa.me/919369699864?text=Hi%20NexaFlow!%20I%27m%20interested%20in%20growing%20my%20business."
-        target="_blank" rel="noopener"
-        style="width:40px; height:40px; border-radius:50%; background:#25d366; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 12px rgba(0,0,0,0.2); opacity:0; transform:translateY(10px); transition:all 0.3s 0.1s;"
-        class="social-float-icon">
+  target="_blank" rel="noopener" aria-label="Chat with NexaFlow on WhatsApp"
+  style="width:40px; height:40px; border-radius:50%; background:#25d366; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 12px rgba(0,0,0,0.2); opacity:0; transform:translateY(10px); transition:all 0.3s 0.1s;"
+  class="social-float-icon">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="white">
           <path
             d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
         </svg>
       </a>
-      <a href="tel:+919369699864"
-        style="width:40px; height:40px; border-radius:50%; background:#2563eb; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 12px rgba(0,0,0,0.2); opacity:0; transform:translateY(10px); transition:all 0.3s 0.15s;"
-        class="social-float-icon">
+     <a href="tel:+919369699864" aria-label="Call NexaFlow"
+  style="width:40px; height:40px; border-radius:50%; background:#2563eb; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 12px rgba(0,0,0,0.2); opacity:0; transform:translateY(10px); transition:all 0.3s 0.15s;"
+  class="social-float-icon">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
           stroke-linecap="round" stroke-linejoin="round">
           <path
@@ -1377,7 +1381,7 @@
       </a>
     </div>
   <button id="social-float-btn" style="width:56px; height:56px; border-radius:50%; background:none; border:none; display:flex; align-items:center; justify-content:center; cursor:pointer; filter:drop-shadow(0 6px 28px rgba(37,211,102,0.45));">
-  <img src="chat-icon.png" alt="Chat" width="56" height="56">
+  <img src="chat-icon.webp" alt="Chat" width="56" height="56">
 </button>
   </div>
   <script src="script.js"></script>
