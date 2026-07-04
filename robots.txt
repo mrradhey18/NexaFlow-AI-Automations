@@ -85,4 +85,4 @@ User-agent: cohere-ai
 Disallow: /
 
 # ── Sitemap ──────────────────────────────────
-Sitemap: https://nexaflow.bar/sitemap.xml
+Sitemap: https://gonexaflow.com/sitemap.xml
