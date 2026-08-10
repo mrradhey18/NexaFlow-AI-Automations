@@ -5,7 +5,7 @@
   <!-- ══ HOME ══ -->
   <url>
     <loc>https://gonexaflow.com/</loc>
-    <lastmod>2026-06-11</lastmod>
+    <lastmod>2026-08-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -68,7 +68,7 @@
     <lastmod>2026-06-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-           <image:image>
+    <image:image>
       <image:loc>https://gonexaflow.com/og-social-media.png</image:loc>
       <image:title>Social Media Management – NexaFlow</image:title>
     </image:image>
@@ -111,13 +111,34 @@
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://gonexaflow.com/blog/How-to-rank-your-Google-business-profile-on-top/og-image.webp</image:loc>
-      <image:title>How-to-rank-your-Google-business-profile-on-top | NexaFlow</image:title>
+      <image:title>How to Rank Your Google Business Profile on Top | NexaFlow</image:title>
     </image:image>
   </url>
 
   <url>
-    <loc>https://gonexaflow.com/blog/why-your-business-needs-a-website</loc>
+    <loc>https://gonexaflow.com/blog/Why-Every-Business-needs-a-Website</loc>
     <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gonexaflow.com/blog/10-Reasons-Your-Business-Is-not-Showing-Up-on-Google-Maps</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gonexaflow.com/blog/how-to-choose-best-website-development-company-lucknow</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gonexaflow.com/blog/top-3-google-maps-results-get-the-calls</loc>
+    <lastmod>2026-08-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
