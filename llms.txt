@@ -1,5 +1,4 @@
 # NexaFlow Digital
-
 > NexaFlow Digital is a local SEO and Google Maps ranking agency based in Lucknow, Uttar Pradesh, India. We help local businesses appear in the Top 3 Google results, get more calls, and grow through Google Business Profile optimization, local SEO, review generation, web development, and social media management.
 
 ## Services
@@ -16,6 +15,10 @@
 
 ## Blog
 - [How to Rank Your Google Business Profile on Top](https://gonexaflow.com/blog/How-to-rank-your-Google-business-profile-on-top/): Complete GBP optimization guide
+- [Why Every Business Needs a Website](https://gonexaflow.com/blog/Why-Every-Business-needs-a-Website/): Why a professional website is essential for local business growth
+- [10 Reasons Your Business Is Not Showing Up on Google Maps](https://gonexaflow.com/blog/10-Reasons-Your-Business-Is-not-Showing-Up-on-Google-Maps/): Common reasons local businesses stay invisible on Google Maps and how to fix them
+- [How to Choose the Best Website Development Company in Lucknow](https://gonexaflow.com/blog/how-to-choose-best-website-development-company-lucknow/): A guide to picking the right web development partner in Lucknow
+- [Top 3 vs Page 1: Why Only the First 3 Google Maps Results Get Any Calls](https://gonexaflow.com/blog/top-3-google-maps-results-get-the-calls/): Why ranking in the Google Maps 3-pack matters more than ranking on page 1
 
 ## Contact
 - Phone: +91 93696 99864
