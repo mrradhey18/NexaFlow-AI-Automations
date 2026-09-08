@@ -571,6 +571,35 @@ footer{ margin-top:70px;border-top:1px solid var(--line); padding:34px 24px 40px
   border:2px solid #fff;
 }
 @media (max-width:480px){ .chat-bubble{width:88vw;max-width:300px} }
+
+  /*------google button style-----*/
+  .pref-source-btn {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: 10px 18px;
+  border: 1px solid #dadce0;
+  border-radius: 20px;
+  background: #fff;
+  text-decoration: none;
+  font-family: 'Google Sans', Arial, sans-serif;
+  transition: box-shadow 0.2s ease, background 0.2s ease;
+}
+.pref-source-btn:hover {
+  box-shadow: 0 1px 6px rgba(32,33,36,0.28);
+  background: #f8f9fa;
+}
+.pref-google-logo {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+.pref-caption {
+  font-size: 11px;
+  color: #5f6368;
+  font-weight: 500;
+}
 </style>
 </head>
 <body>
@@ -635,7 +664,14 @@ footer{ margin-top:70px;border-top:1px solid var(--line); padding:34px 24px 40px
            aria-label="Share on Facebook">
           <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.16 8.44 9.94v-7.03H7.9v-2.91h2.54V9.84c0-2.51 1.49-3.9 3.77-3.9 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.63.78-1.63 1.57v1.89h2.78l-.45 2.91h-2.33V22c4.78-.78 8.44-4.94 8.44-9.94z"/></svg>
         </a>
-        <div google-add-preferred-source-btn>Add</div>
+        <a href="https://www.google.com/preferences/source?q=britesmiledentalcare2002.co.in"
+   target="_blank" rel="noopener"
+   class="pref-source-btn">
+  <span class="pref-google-logo">
+    <span style="color:#4285F4;">G</span><span style="color:#EA4335;">o</span><span style="color:#FBBC05;">o</span><span style="color:#4285F4;">g</span><span style="color:#34A853;">l</span><span style="color:#EA4335;">e</span>
+  </span>
+  <span class="pref-caption">Add as a preferred source</span>
+</a>
       </div>
     </div>
   </section>
